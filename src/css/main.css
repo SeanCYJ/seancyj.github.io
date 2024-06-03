@@ -1,0 +1,83 @@
+
+body {
+    font-family: "DM Mono", monospace !important;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    display: block;
+    font-family: "DM Mono", monospace !important;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    padding: 3rem 5vw 1rem 20vw !important;
+    text-decoration: underline;
+    height: fit-content;
+}
+
+footer {
+    position: fixed;
+    bottom: 0rem;
+    left: 1rem;
+    /* height: 1rem; */
+    background: rgba(0, 174, 255, 0);
+    font-size: 0.6rem;
+    color: rgb(150, 150, 150);
+}
+
+#root {
+    height: 100vh;
+    overflow-y: scroll;
+    /* scroll-snap-type: y mandatory; */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.root::-webkit-scrollbar {
+    display: none;
+}
+
+/* #root > .row {
+    scroll-snap-align: center;
+} */
+
+.row {
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-weight: 400;
+    }
+    
+    h2 {
+        display: block;
+        font-weight: 400;
+        padding: 5rem 5vw 3rem 20vw !important;
+    }
+    #root {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y proximity;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    
+    body {
+        font-weight: 400;
+    }
+    
+    h2 {
+        font-weight: 400;
+        padding: 5rem 5vw 3rem 20vw !important;
+    }
+}
+
+
+
+
