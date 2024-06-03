@@ -53,7 +53,7 @@ const ContactSection = () => {
                                 </button>
                             <button className="ctact-btn ctact-gh" onClick={() => {window.open('https://github.com/SeanCYJ')}}>
                                 GitHub
-                                <img className="gh-logo" src="./src/assets/github-mark-white.svg"/>
+                                <img className="gh-logo" src={"../github-mark-white.svg"}/>
                             </button>
                         </div>
                     </div>

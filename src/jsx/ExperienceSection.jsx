@@ -24,7 +24,7 @@ const ExpSection = () => {
     useEffect(() => {
         const fetchData = async () => {
         try {
-            const response = await fetch('/src/assets/ExpJson.json');
+            const response = await fetch('../ExpJson.json');
             const jsonData = await response.json();
             setData(jsonData);
             if (data) {

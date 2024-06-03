@@ -12,7 +12,7 @@ const AboutSection = () => {
                         About Me
                     </h2>
                     <div className="abt-cont">
-                        <img className="abt-img" src="/src/assets/landingPicMain_2.svg"/>
+                        <img className="abt-img" src={"../landingPicMain_2.svg"}/>
                         <div className="abt-text">
                             <span>
                                 I am a 3rd year MEng student with practical experience in engineering projects, alongside a passion in programming and
