@@ -73,19 +73,10 @@
 
 @media screen and (min-width: 690px) {
     .section-2 {
-        /* padding: 0rem 10vw 0rem 10vw; */
-        display: flex;
-        justify-content: center;
-        align-content: center;
         padding: 3rem 0rem 30vh 0rem;
-        background: rgba(0,0,0,0);
-        height: fit-content;
-        /* box-shadow: 0px 0px 20px rgba(0,0,0,0.5); */
     }
     
     .abt-cont {
-        display: grid;
-        grid-template-columns: none;
         grid-template-rows: 1fr auto;
         gap: 2rem;
         padding: 0rem 12vw 0rem 12vw;
@@ -95,8 +86,6 @@
     .abt-img {
         width:50%; 
         max-width: 200px;
-        border: solid; 
-        border-radius: 1rem;
         animation: slide-frl ease-in-out 1s;
     }
 
@@ -107,28 +96,19 @@
     
     .abt-text {
         font-size: 1.2rem;
-        font-family: "Urbanist", sans-serif;
-        font-optical-sizing: auto;
         font-weight: 500;
-        font-style: normal;
         animation: abt-slide-in ease-in-out 0.8s;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .section-2 {
-        /* padding: 0rem 10vw 0rem 10vw; */
-        display: flex;
-        justify-content: center;
-        align-content: center;
         padding: 2vh 0rem 0vh 0rem;
         background: rgba(0,0,0,0);
         height: 100vh;
-        /* box-shadow: 0px 0px 20px rgba(0,0,0,0.5); */
     }
     
     .abt-cont {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: none;
         gap: 2rem;
@@ -141,6 +121,7 @@
         width:100%; 
         border: solid; 
         border-radius: 1rem;
+        animation: slide-frl ease-in-out 1s;
         justify-self: center;
     }
     
@@ -151,10 +132,6 @@
     
     .abt-text {
         font-size: 1.2rem;
-        font-family: "Urbanist", sans-serif;
-        font-optical-sizing: auto;
         font-weight: 400;
-        font-style: normal;
-        /* height: 50vh; */
     }
 }

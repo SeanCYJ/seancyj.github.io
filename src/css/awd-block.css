@@ -8,7 +8,7 @@
 
 .awdGal-btn {
     border: none;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 }
 
 .awdGal-btn:focus {
@@ -27,10 +27,13 @@
     justify-self: center;
     height: fit-content;
     width: 100%;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
     padding: 0rem 0rem 3rem 0rem;
 }
+
 .awdBlock-cont::-webkit-scrollbar {
     display: none;
 }
@@ -41,10 +44,10 @@
     grid-template-rows: 1fr 1fr; */
     padding: 1.6rem;
     border-radius: 1rem;
-    border: 2px solid rgb(0,0,0);
+    border: 2px solid rgb(0, 0, 0);
     height: fit-content;
     min-width: 15rem;
-    background-color:  rgb(248, 255, 180);
+    background-color: rgb(248, 255, 180);
     color: black;
     cursor: pointer;
     transition: 0.3s ease;

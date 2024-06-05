@@ -1,5 +1,5 @@
 import React from "react";
-import '/src/css/sideButtons.css';
+import '/src/css/side-buttons.css';
 
 export function DarkModeSwitch() {
     return (

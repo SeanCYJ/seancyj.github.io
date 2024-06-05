@@ -27,6 +27,7 @@
     0% {
         opacity: 0%;
     }
+
     100% {
         opacity: 100%;
     }
@@ -44,12 +45,14 @@
         opacity: 0%;
         transform: translate(0, 100%);
     }
+
     80% {
         transform: translate(0, -1%);
     }
+
     100% {
         opacity: 100%;
-        transform: translate(0,0);
+        transform: translate(0, 0);
     }
 }
 
@@ -59,7 +62,7 @@
     font-style: normal;
     font-size: 1rem;
     border-radius: 0.6rem;
-    border: 0px solid rgba(0,0,0,1);
+    border: 0px solid rgba(0, 0, 0, 1);
     padding: 0.5rem;
     display: flex;
     justify-content: center;
@@ -98,7 +101,7 @@
         margin-top: -8vh;
         padding-top: 0vh;
     }
-    
+
     .contact-cont {
         font-family: "Urbanist", sans-serif;
         font-optical-sizing: auto;
@@ -110,17 +113,17 @@
         gap: 2rem;
         padding: 0rem 15vw 0rem 15vw;
     }
-    
+
     .contact-btn-cont {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 1rem;
     }
-    
+
     .ctact-btn {
         font-size: 2vw;
         border-radius: 1rem;
-        border: 0px solid rgba(0,0,0,1);
+        border: 0px solid rgba(0, 0, 0, 1);
         padding: 0.5rem;
         display: flex;
         justify-content: center;
@@ -129,8 +132,8 @@
         max-width: 22rem;
         color: whitesmoke;
     }
-    
-    
+
+
     .ctact-gh {
         display: grid;
         grid-template-columns: auto auto;
@@ -150,7 +153,7 @@
         margin-top: -20vh;
         padding-top: 0vh;
     }
-    
+
     .contact-cont {
         font-family: "Urbanist", sans-serif;
         font-optical-sizing: auto;
@@ -163,17 +166,17 @@
         padding: 0rem 20vw 0rem 20vw;
         justify-items: center;
     }
-    
+
     .contact-btn-cont {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 1rem;
     }
-    
+
     .ctact-btn {
         font-size: 1.2rem;
         border-radius: 1rem;
-        border: 0px solid rgba(0,0,0,1);
+        border: 0px solid rgba(0, 0, 0, 1);
         padding: 0.5rem;
         display: flex;
         justify-content: center;
@@ -182,8 +185,8 @@
         max-width: 22rem;
         color: whitesmoke;
     }
-    
-    
+
+
     .ctact-gh {
         display: grid;
         grid-template-columns: auto auto;

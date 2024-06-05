@@ -29,7 +29,7 @@
     border: 2px solid rgb(0, 0, 0);
     height: 100%;
     /* aspect-ratio: 1.5/1; */
-    background-color:  rgb(180, 246, 255);
+    background-color: rgb(180, 246, 255);
     color: black;
     cursor: pointer;
     transition: 0.3s ease;
@@ -39,6 +39,7 @@
     0% {
         opacity: 0%;
     }
+
     100% {
         opacity: 100%;
     }
@@ -72,8 +73,10 @@
 }
 
 .button-container {
-    display: flex !important; /* Use flexbox to arrange buttons horizontally */
-    align-items: center; /* Center the buttons vertically if they are in a container with height */
+    display: flex !important;
+    /* Use flexbox to arrange buttons horizontally */
+    align-items: center;
+    /* Center the buttons vertically if they are in a container with height */
     margin: 0rem 5vw 0.5rem 4vw !important;
     padding: 0.2rem !important;
     overflow: auto;
@@ -81,9 +84,11 @@
     height: fit-content;
     max-width: 90vw !important;
     flex-shrink: 1 !important;
-    background: rgba(0,0,0,0);
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    background: rgba(0, 0, 0, 0);
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
     animation: slide-frr ease 1s;
 
 }
@@ -93,12 +98,14 @@
         opacity: 50%;
         transform: translate(50%, 0);
     }
+
     80% {
         transform: translate(-1%, 0);
     }
+
     100% {
         opacity: 100%;
-        transform: translate(0,0);
+        transform: translate(0, 0);
     }
 }
 
@@ -109,7 +116,7 @@
 .ftr-btn {
     margin: 0rem 0.2rem 0.2rem 0.2rem;
     padding: 0.2rem 1rem 0.2rem 1rem;
-    border: 2px solid rgb(0,0,0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 2rem;
     width: fit-content;
     transition: 0.3s ease;
@@ -136,7 +143,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
     overflow: hidden;
     z-index: 3;
 }
@@ -157,7 +164,7 @@
     /* border: 2px solid rgb(0, 0, 0); */
     box-shadow: 0px 0px 10px rgb(50, 50, 50);
     border-radius: 1rem;
-    background: rgba(250,250, 250,1);
+    background: rgba(250, 250, 250, 1);
     /* aspect-ratio: 18/9; */
     max-height: 85vh;
     overflow: hidden;
@@ -186,7 +193,7 @@
     height: 1rem;
     border-radius: 3rem;
     border: none;
-    background:rgba(255, 91, 91, 0.2);
+    background: rgba(255, 91, 91, 0.2);
 }
 
 .closeExpDescrip-mobile {
@@ -199,7 +206,7 @@
 }
 
 .expD-img-cont {
-    border: 2px solid rgb(150,150,150);
+    border: 2px solid rgb(150, 150, 150);
     border-radius: 0.6rem;
     background: rgb(180, 246, 255);
     overflow: hidden;
@@ -214,8 +221,6 @@
     /* height: 100%; */
 }
 
-.expD-text-cont {
-}
 
 .expD-title {
     font-size: 1.4rem !important;
@@ -236,16 +241,13 @@
 
 @media screen and (min-width: 690px) {
     .section-3 {
-        display: flex;
-        flex-direction: column;
         gap: 0rem;
         padding-top: 12vh;
         max-height: 100vh;
         overflow-y: auto;
     }
-    
+
     .expBlock-cont {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
         padding: 0rem 10vw 0rem 10vw !important;
@@ -253,94 +255,58 @@
         max-height: 70vh;
         overflow-y: auto;
     }
-    
-    
+
+
     .expBlock {
-        display: grid;
         grid-template-rows: 0.5fr 1fr;
-        /* padding: 1rem; */
         border-radius: 1rem;
-        overflow: hidden;
-        /* border: 2px solid rgb(0,0,0); */
         height: 100%;
         /* aspect-ratio: 2/1; */
-        /* background-color:  rgb(180, 246, 255); */
-        color: black;
-        cursor: pointer;
         transition: 0.3s ease;
     }
-    
-    
+
+
     .imgCont {
-        /* border: 2px solid rgb(0,0,0);
-        border-radius: 1rem; */
         background-color: white;
     }
-    
+
     .textCont {
         padding: 1.5vw;
         font-size: 1rem;
-        font-family: "Urbanist", sans-serif;
-        font-optical-sizing: auto;
         font-weight: 600;
-        text-align: left;
     }
-    
+
     .button-container {
-        display: flex !important; /* Use flexbox to arrange buttons horizontally */
-        align-items: center; /* Center the buttons vertically if they are in a container with height */
         margin: 0rem 10vw 0.5rem 9.5vw !important;
         padding: 0.2rem !important;
         overflow: auto;
         width: auto !important;
         height: fit-content;
         max-width: 80vw !important;
-        flex-shrink: 1 !important;
-        background: rgba(0,0,0,0);
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+        /* animation: slide-frr ease 1s; */
     }
-    
-    .button-container::-webkit-scrollbar {
-        display: none;
-    }
-    
+
     .ftr-btn {
         margin: 0rem 0.5rem 0.2rem 0.5rem;
         padding: 0rem 1rem 0rem 1rem;
-        border: 2px solid rgb(0,0,0);
         border-radius: 2rem;
         width: fit-content;
         transition: 0.3s ease;
-        cursor: pointer;
-        white-space: nowrap;
-        color: black;
     }
-    
-    /* .ftr-btn:hover {
-        box-shadow: 0px 0px 20px rgb(255, 238, 87);
-        background-color: rgb(100, 100, 100);
-        color: white;
-    } */
-    
+
     .selected {
         transition: 0s;
-        background-color: rgb(0, 0, 0);
-        color: white;
     }
-    
+
     .expDescrip-bg {
         width: 100vw;
         height: 100vh;
         position: absolute;
         top: 0;
         left: 0;
-        background: rgba(255,255,255,0.5);
     }
-    
+
     .expDescrip-cont {
-        font-family: "Urbanist", sans-serif;
-        font-optical-sizing: auto;
         position: absolute;
         top: 10vh !important;
         left: 50% !important;
@@ -359,9 +325,8 @@
         /* background: rgba(250,250, 250,1); */
         /* aspect-ratio: 16/8; */
         align-items: center;
-        z-index: 11;
     }
-    
+
     .closeExpDescrip-btn {
         display: block;
         position: absolute;
@@ -371,29 +336,24 @@
         height: 1rem;
         border-radius: 3rem;
         border: none;
-        background:rgb(255, 91, 91);
+        background: rgb(255, 91, 91);
     }
-    
+
     .expD-img-cont {
-        /* border: 2px solid rgb(0, 0, 0); */
         border-radius: 1rem;
-        background: rgb(180, 246, 255);
-        aspect-ratio: 16/10;
     }
-    
+
     .expD-title {
         font-size: 1.2rem !important;
         font-weight: 600;
     }
-    
+
     .expD-a {
-        color: rgb(40, 40, 40);
         font-weight: 500;
         font-size: 1rem;
     }
-    
+
     .expD-b {
-        color: rgb(150, 150, 150);
         font-weight: 400;
         font-size: 0.8rem;
     }
@@ -401,14 +361,11 @@
 
 @media screen and (min-width: 1200px) {
     .section-3 {
-        display: flex;
-        flex-direction: column;
         gap: 0rem;
         padding-top: 12vh;
     }
-    
+
     .expBlock-cont {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
         padding: 0rem 20vw 0rem 20vw !important;
@@ -416,8 +373,8 @@
         max-height: 70vh;
         overflow-y: auto;
     }
-    
-    
+
+
     .expBlock {
         display: grid;
         grid-template-rows: 0.5fr 1fr;
@@ -427,31 +384,27 @@
         /* border: 2px solid rgb(0,0,0); */
         height: 100%;
         /* aspect-ratio: 2/1; */
-        /* background-color:  rgb(180, 246, 255); */
-        color: black;
-        cursor: pointer;
         transition: 0.3s ease;
     }
-    
-    
+
+
     .imgCont {
         /* border: 2px solid rgb(0,0,0);
         border-radius: 1rem; */
         background-color: white;
     }
-    
+
     .textCont {
         padding: 1.5vw;
         font-size: 1.3rem;
-        font-family: "Urbanist", sans-serif;
-        font-optical-sizing: auto;
         font-weight: 600;
-        text-align: left;
     }
-    
+
     .button-container {
-        display: flex !important; /* Use flexbox to arrange buttons horizontally */
-        align-items: center; /* Center the buttons vertically if they are in a container with height */
+        display: flex !important;
+        /* Use flexbox to arrange buttons horizontally */
+        align-items: center;
+        /* Center the buttons vertically if they are in a container with height */
         margin: 0rem 20vw 0.8rem 19.5vw !important;
         padding: 0.2rem !important;
         overflow: auto;
@@ -459,50 +412,37 @@
         height: fit-content;
         max-width: 70vw !important;
         flex-shrink: 1 !important;
-        background: rgba(0,0,0,0);
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
     }
-    
-    .button-container::-webkit-scrollbar {
-        display: none;
-    }
-    
+
     .ftr-btn {
         margin: 0rem 0.5rem 0.2rem 0.5rem;
         padding: 0rem 1rem 0rem 1rem;
-        border: 2px solid rgb(0,0,0);
+        border: 2px solid rgb(0, 0, 0);
         border-radius: 2rem;
         width: fit-content;
         transition: 0.3s ease;
-        cursor: pointer;
         white-space: nowrap;
     }
-    
+
     /* .ftr-btn:hover {
         box-shadow: 0px 0px 20px rgb(255, 238, 87);
         background-color: rgb(100, 100, 100);
         color: white;
     } */
-    
+
     .selected {
         transition: 0s;
-        background-color: rgb(0, 0, 0);
-        color: white;
     }
-    
+
     .expDescrip-bg {
         width: 100vw;
         height: 100vh;
         position: absolute;
         top: 0;
         left: 0;
-        background: rgba(255,255,255,0.8);
     }
-    
+
     .expDescrip-cont {
-        font-family: "Urbanist", sans-serif;
-        font-optical-sizing: auto;
         position: absolute;
         top: 16vh !important;
         left: 50% !important;
@@ -512,7 +452,6 @@
         width: 70vw;
         max-width: 70rem;
         padding: 4rem 4rem 4rem 4rem;
-        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: none;
         gap: 3rem;
@@ -522,7 +461,7 @@
         /* aspect-ratio: 16/9; */
         align-items: center;
     }
-    
+
     .closeExpDescrip-btn {
         display: block;
         position: absolute;
@@ -531,30 +470,24 @@
         width: 1.5rem;
         height: 1rem;
         border-radius: 3rem;
-        border: none;
-        background:rgb(255, 91, 91);
+        background: rgb(255, 91, 91);
     }
-    
+
     .expD-img-cont {
-        /* border: 2px solid rgb(0, 0, 0); */
         border-radius: 1rem;
-        background: rgb(180, 246, 255);
-        aspect-ratio: 16/10;
     }
-    
+
     .expD-title {
         font-size: 1.8rem !important;
         font-weight: 600;
     }
-    
+
     .expD-a {
-        color: rgb(40, 40, 40);
         font-weight: 500;
         font-size: 1.2rem;
     }
-    
+
     .expD-b {
-        color: rgb(150, 150, 150);
         font-weight: 400;
         font-size: 1rem;
     }

@@ -1,7 +1,7 @@
 .section-1 {
     height: 100vh;
     overflow: hidden;
-    box-shadow: 0px 10px 30px -10px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.5);
     width: 100vw;
 }
 
@@ -28,12 +28,14 @@
         transform: translate(-100%, 0%);
         opacity: 0%;
     }
+
     75% {
         transform: translate(1%, 0%);
     }
+
     100% {
         transform: translate(0%, 0%);
-        opacity:  100%;
+        opacity: 100%;
     }
 }
 
@@ -55,6 +57,7 @@
     0% {
         opacity: 0%;
     }
+
     100% {
         opacity: 100%;
     }
@@ -63,7 +66,7 @@
 .shortcut-btn {
     font-size: 1rem;
     border-radius: 0.6rem;
-    border: 0px solid rgba(0,0,0,1);
+    border: 0px solid rgba(0, 0, 0, 1);
     padding: 0.5rem;
     display: flex;
     justify-content: center;
@@ -83,7 +86,7 @@
     text-align: center;
     align-items: center;
     background-color: #6e5494;
-    
+
     transition: 0.3s ease;
 
 }
@@ -128,7 +131,7 @@
     color: rgb(30, 94, 90);
     font-size: 20vw;
     background: rgba(245, 245, 245, 0.8);
-    border: 2px solid rgb(0,0,0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 1rem;
     padding: 0rem 1rem 0rem 1rem;
     margin-left: calc(15vw - 2rem);
@@ -167,8 +170,9 @@
         transform: translate(100%, 55%);
         scale: 50%;
     }
+
     50% {
-        opacity : 100%;
+        opacity: 100%;
         transform: translate(-20%, -20%);
         scale: 50%;
     }
@@ -186,13 +190,15 @@
         transform: translate(0%, 0%);
         scale: 50%;
     }
+
     20% {
-        opacity : 100%;
-        transform: translate(20%,  -10%);
+        opacity: 100%;
+        transform: translate(20%, -10%);
         scale: 45%;
     }
+
     70% {
-        opacity : 100%;
+        opacity: 100%;
         transform: translate(15%, -70%);
         scale: 40%;
     }
@@ -206,16 +212,24 @@
 
 .concat-cloud-r {
     display: none;
-    --d: 15s;  
+    --d: 15s;
     width: 1000px;
     top: 25%;
     left: 30%;
     position: relative;
 }
 
-.concat-cloud-r > .cloud-bg-r:nth-child(2) {animation-delay: calc(1*var(--d)/4)}
-.concat-cloud-r > .cloud-bg-r:nth-child(3) {animation-delay: calc(2*var(--d)/4)}
-.concat-cloud-r > .cloud-bg-r:nth-child(4) {animation-delay: calc(3*var(--d)/4)}
+.concat-cloud-r>.cloud-bg-r:nth-child(2) {
+    animation-delay: calc(1*var(--d)/4)
+}
+
+.concat-cloud-r>.cloud-bg-r:nth-child(3) {
+    animation-delay: calc(2*var(--d)/4)
+}
+
+.concat-cloud-r>.cloud-bg-r:nth-child(4) {
+    animation-delay: calc(3*var(--d)/4)
+}
 
 
 .cloud-bg-r {
@@ -233,6 +247,7 @@
         opacity: 100%;
         transform: rotate(40deg) translate(-150%);
     }
+
     100% {
         opacity: 100%;
         transform: rotate(40deg) translate(150%);
@@ -242,7 +257,7 @@
 
 .concat-cloud-l {
     --d: 13s;
-    display: grid; 
+    display: grid;
     width: 1000px;
     top: 25%;
     left: 25%;
@@ -254,6 +269,7 @@
         opacity: 100%;
         transform: rotate(40deg) translate(-200%);
     }
+
     100% {
         opacity: 100%;
         transform: rotate(40deg) translate(200%);
@@ -277,14 +293,14 @@
 
 
 
-@media screen and (min-width: 700px) {    
+@media screen and (min-width: 700px) {
     .land-name {
         padding: 0 0% 0 5% !important;
         display: grid;
         position: relative;
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .landing-text {
         padding-top: 20vh;
         overflow: hidden;
@@ -295,8 +311,8 @@
         animation-delay: 0s;
         animation-fill-mode: both;
     }
-    
-    
+
+
     .short-cuts {
         padding: 1rem 1rem 1rem 1rem;
         width: 90vw;
@@ -310,23 +326,23 @@
         animation-delay: 1.8s;
         animation-fill-mode: forwards;
     }
-    
-    
+
+
     .shortcut-btn {
         font-size: 2vw;
         border-radius: 0.6rem;
-        border: 0px solid rgba(0,0,0,1);
+        border: 0px solid rgba(0, 0, 0, 1);
         padding: 0.5rem;
         display: flex;
         justify-content: center;
         cursor: pointer;
         min-width: 5rem;
     }
-    
+
     .shortcut-btn:focus {
         outline: none;
     }
-    
+
     .gh-btn {
         color: whitesmoke;
         display: grid;
@@ -335,44 +351,44 @@
         text-align: center;
         align-items: center;
         background-color: #6e5494;
-        
+
         transition: 0.3s ease;
-    
+
     }
-    
+
     .gh-btn:hover {
         box-shadow: 0px 0px 20px #6e5494;
     }
-    
+
     .gh-logo {
         width: 1rem;
     }
-    
+
     .abt-btn {
         color: whitesmoke;
         background-color: rgb(70, 141, 136);
         transition: 0.3s ease;
     }
-    
+
     .abt-btn:hover {
         box-shadow: 0px 0px 20px rgb(70, 141, 136);
     }
-    
+
     .contact-btn {
         color: whitesmoke;
         background-color: rgb(78, 172, 196);
         transition: 0.3s ease;
     }
-    
+
     .contact-btn:hover {
         box-shadow: 0px 0px 20px rgb(78, 172, 196);
     }
-    
+
     .text-small {
         font-size: 32px;
         padding-left: 1rem;
     }
-    
+
     .Name {
         font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
@@ -380,12 +396,12 @@
         color: rgb(30, 94, 90);
         font-size: 8rem;
         background: rgba(245, 245, 245, 0.8);
-        border: 2px solid rgb(0,0,0);
+        border: 2px solid rgb(0, 0, 0);
         border-radius: 1rem;
         padding: 0rem 1rem 0rem 1rem;
         margin-left: 1rem;
     }
-    
+
     .landing-cont {
         /* visibility: hidden; */
         padding-top: 10vh;
@@ -395,8 +411,8 @@
         grid-template-columns: repeat(12, 1fr);
         z-index: 1;
     }
-    
-    
+
+
     .landing-image {
         margin-top: -25vh;
         margin-left: 10vw;
@@ -412,21 +428,29 @@
         /* animation: fly-in 5s ease-out 3s, fly-lr 15s linear 8s infinite; */
         animation: none;
     }
-    
+
     .concat-cloud-r {
         display: none;
-        --d: 15s;  
+        --d: 15s;
         width: 1000px;
         top: 25%;
         left: 30%;
         position: relative;
     }
-    
-    .concat-cloud-r > .cloud-bg-r:nth-child(2) {animation-delay: calc(1*var(--d)/4)}
-    .concat-cloud-r > .cloud-bg-r:nth-child(3) {animation-delay: calc(2*var(--d)/4)}
-    .concat-cloud-r > .cloud-bg-r:nth-child(4) {animation-delay: calc(3*var(--d)/4)}
-    
-    
+
+    .concat-cloud-r>.cloud-bg-r:nth-child(2) {
+        animation-delay: calc(1*var(--d)/4)
+    }
+
+    .concat-cloud-r>.cloud-bg-r:nth-child(3) {
+        animation-delay: calc(2*var(--d)/4)
+    }
+
+    .concat-cloud-r>.cloud-bg-r:nth-child(4) {
+        animation-delay: calc(3*var(--d)/4)
+    }
+
+
     .cloud-bg-r {
         will-change: transform;
         /* animation: slide-r var(--d) linear infinite; */
@@ -436,39 +460,41 @@
         z-index: 1;
         opacity: 0%;
     }
-    
+
     @keyframes slide-r {
         0% {
             opacity: 100%;
             transform: rotate(40deg) translate(-150%);
         }
+
         100% {
             opacity: 100%;
             transform: rotate(40deg) translate(150%);
         }
     }
-    
-    
+
+
     .concat-cloud-l {
         --d: 13s;
-        display: grid; 
+        display: grid;
         width: 1000px;
         top: 25%;
         left: 25%;
         position: relative;
     }
-    
+
     @keyframes slide-l {
         0% {
             opacity: 100%;
             transform: rotate(40deg) translate(-200%);
         }
+
         100% {
             opacity: 100%;
             transform: rotate(40deg) translate(200%);
         }
     }
-    
+
     .cloud-bg-l {
         will-change: transform;
         grid-area: 1/1;
@@ -476,7 +502,7 @@
         z-index: 1;
         opacity: 0%;
     }
-    
+
     .land-bg {
         /* background: black; */
         background: linear-gradient(rgb(245, 240, 174), rgb(180, 246, 255));
@@ -492,14 +518,14 @@
         /* width: calc(100vw - 6rem); */
         width: 100vw;
     }
-    
+
     .land-name {
         padding: 0 0% 0 10% !important;
         display: grid;
         position: relative;
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .landing-text {
         padding-top: 35vh;
         overflow: hidden;
@@ -510,7 +536,7 @@
         animation-delay: 3.2s;
         animation-fill-mode: both;
     }
-    
+
     .short-cuts {
         padding: 1rem 1rem 1rem 1rem;
         width: fit-content;
@@ -524,15 +550,15 @@
         animation-delay: 5s;
         animation-fill-mode: forwards;
     }
-    
+
     .shortcut-btn {
         font-size: 1rem;
         border-radius: 1rem;
-        border: 0px solid rgba(0,0,0,1);
+        border: 0px solid rgba(0, 0, 0, 1);
         padding: 0.5rem;
         min-width: 10rem;
     }
-    
+
     .gh-btn {
         color: whitesmoke;
         display: grid;
@@ -541,44 +567,44 @@
         text-align: center;
         align-items: center;
         background-color: #6e5494;
-        
+
         transition: 0.3s ease;
-    
+
     }
-    
+
     .gh-btn:hover {
         box-shadow: 0px 0px 20px #6e5494;
     }
-    
+
     .gh-logo {
         width: 1rem;
     }
-    
+
     .abt-btn {
         color: whitesmoke;
         background-color: rgb(70, 141, 136);
         transition: 0.3s ease;
     }
-    
+
     .abt-btn:hover {
         box-shadow: 0px 0px 20px rgb(70, 141, 136);
     }
-    
+
     .contact-btn {
         color: whitesmoke;
         background-color: rgb(78, 172, 196);
         transition: 0.3s ease;
     }
-    
+
     .contact-btn:hover {
         box-shadow: 0px 0px 20px rgb(78, 172, 196);
     }
-    
+
     .text-small {
         font-size: 32px;
         padding-left: 1rem;
     }
-    
+
     .Name {
         font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
@@ -586,12 +612,12 @@
         color: rgb(30, 94, 90);
         font-size: 9rem;
         background: rgba(245, 245, 245, 0.8);
-        border: 2px solid rgb(0,0,0);
+        border: 2px solid rgb(0, 0, 0);
         border-radius: 2rem;
         padding: 0rem 1rem 0rem 1rem;
         margin-left: 1rem;
     }
-    
+
     .landing-cont {
         visibility: visible;
         padding-top: 25vh;
@@ -601,8 +627,8 @@
         grid-template-columns: repeat(12, 1fr);
         z-index: 1;
     }
-    
-    
+
+
     .landing-image {
         margin-top: -15vh;
         margin-left: 10vw;
@@ -616,66 +642,77 @@
         opacity: 0;
         will-change: transform, opacity;
         animation: fly-in 5s ease-out 3s, fly-lr 15s linear 8s infinite;
-    
+
     }
-    
+
     @keyframes fly-in {
         0% {
             opacity: 100%;
             transform: translate(100%, 55%);
             scale: 50%;
         }
+
         50% {
-            opacity : 100%;
+            opacity: 100%;
             transform: translate(-20%, -20%);
             scale: 50%;
         }
-    
+
         100% {
             opacity: 100%;
             transform: translate(0%, 0%);
             scale: 50%;
         }
     }
-    
+
     @keyframes fly-lr {
         0% {
             opacity: 100%;
             transform: translate(0%, 0%);
             scale: 50%;
         }
+
         20% {
-            opacity : 100%;
-            transform: translate(20%,  -10%);
+            opacity: 100%;
+            transform: translate(20%, -10%);
             scale: 45%;
         }
+
         70% {
-            opacity : 100%;
+            opacity: 100%;
             transform: translate(15%, -70%);
             scale: 40%;
         }
-    
+
         100% {
             opacity: 100%;
             transform: translate(0%, 0%);
             scale: 50%;
         }
     }
-    
+
     .concat-cloud-r {
         --d: 15s;
-        display: grid; 
+        display: grid;
         width: 1000px;
         top: 25%;
         left: 30%;
         position: relative;
     }
-    
-    .concat-cloud-r > .cloud-bg-r:nth-child(2) {animation-delay: calc(1*var(--d)/4)}
-    .concat-cloud-r > .cloud-bg-r:nth-child(3) {animation-delay: calc(2*var(--d)/4)}
-    .concat-cloud-r > .cloud-bg-r:nth-child(4) {animation-delay: calc(3*var(--d)/4)}
-    
-    
+
+    .concat-cloud-r>.cloud-bg-r:nth-child(2) {
+        animation-delay: calc(1*var(--d)/4)
+    }
+
+    .concat-cloud-r>.cloud-bg-r:nth-child(3) {
+        animation-delay: calc(2*var(--d)/4)
+    }
+
+    .concat-cloud-r>.cloud-bg-r:nth-child(4) {
+        animation-delay: calc(3*var(--d)/4)
+    }
+
+
     .cloud-bg-r {
         will-change: transform;
         animation: slide-r var(--d) linear infinite;
@@ -684,39 +721,41 @@
         z-index: 1;
         opacity: 0%;
     }
-    
+
     @keyframes slide-r {
         0% {
             opacity: 100%;
             transform: rotate(40deg) translate(-150%);
         }
+
         100% {
             opacity: 100%;
             transform: rotate(40deg) translate(150%);
         }
     }
-    
-    
+
+
     .concat-cloud-l {
         --d: 13s;
-        display: grid; 
+        display: grid;
         width: 1000px;
         top: 25%;
         left: 25%;
         position: relative;
     }
-    
+
     @keyframes slide-l {
         0% {
             opacity: 100%;
             transform: rotate(40deg) translate(-200%);
         }
+
         100% {
             opacity: 100%;
             transform: rotate(40deg) translate(200%);
         }
     }
-    
+
     .cloud-bg-l {
         will-change: transform;
         grid-area: 1/1;
@@ -724,7 +763,7 @@
         z-index: 1;
         opacity: 0%;
     }
-    
+
     .land-bg {
         /* background: linear-gradient(rgb(245, 240, 174), rgb(180, 246, 255)); */
         background-attachment: fixed;

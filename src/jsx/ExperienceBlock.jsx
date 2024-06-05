@@ -22,7 +22,7 @@
 
 import React, {useState, useEffect, useRef} from 'react';
 import { useDrag } from '@use-gesture/react';
-import '/src/css/expBlock.css';
+import '/src/css/exp-block.css';
 
 // the html code for a single exp card
 export function ExpBlock({data}) {

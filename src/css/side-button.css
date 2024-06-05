@@ -9,9 +9,9 @@
 }
 
 .dm-btn {
-    border: 2px solid rgb(0,0,0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 0.5rem;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     display: grid;
     grid-template-rows: 1fr 1fr;
     align-items: center;
@@ -22,7 +22,7 @@
     transition: 0.2s ease;
 }
 
-.dm-btn:focus{
+.dm-btn:focus {
     outline: none;
 }
 
@@ -30,14 +30,14 @@
     opacity: 100%;
 }
 
-.dm-btn > .light {
+.dm-btn>.light {
     font-weight: 600;
     color: rgb(255, 136, 0);
 }
 
-.dm-btn > .dark {
+.dm-btn>.dark {
     color: rgb(220, 220, 220);
-    border: 2px solid rgb(220,220,220);
+    border: 2px solid rgb(220, 220, 220);
     border-radius: 0.2rem;
     width: 3rem;
 }
