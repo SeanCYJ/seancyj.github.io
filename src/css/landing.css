@@ -1,7 +1,6 @@
 .section-1 {
     height: 100vh;
     overflow: hidden;
-    box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.5);
     width: 100vw;
 }
 
@@ -66,7 +65,7 @@
 .shortcut-btn {
     font-size: 1rem;
     border-radius: 0.6rem;
-    border: 0px solid rgba(0, 0, 0, 1);
+    /* border: 0px solid rgba(0, 0, 0, 1); */
     padding: 0.5rem;
     display: flex;
     justify-content: center;
@@ -86,9 +85,7 @@
     text-align: center;
     align-items: center;
     background-color: #6e5494;
-
     transition: 0.3s ease;
-
 }
 
 .gh-btn:hover {
@@ -296,7 +293,6 @@
 @media screen and (min-width: 700px) {
     .land-name {
         padding: 0 0% 0 5% !important;
-        display: grid;
         position: relative;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -331,7 +327,6 @@
     .shortcut-btn {
         font-size: 2vw;
         border-radius: 0.6rem;
-        border: 0px solid rgba(0, 0, 0, 1);
         padding: 0.5rem;
         display: flex;
         justify-content: center;
@@ -344,20 +339,9 @@
     }
 
     .gh-btn {
-        color: whitesmoke;
-        display: grid;
-        grid-template-columns: auto auto;
         gap: 1rem;
-        text-align: center;
-        align-items: center;
-        background-color: #6e5494;
-
         transition: 0.3s ease;
 
-    }
-
-    .gh-btn:hover {
-        box-shadow: 0px 0px 20px #6e5494;
     }
 
     .gh-logo {
@@ -365,23 +349,11 @@
     }
 
     .abt-btn {
-        color: whitesmoke;
-        background-color: rgb(70, 141, 136);
         transition: 0.3s ease;
-    }
-
-    .abt-btn:hover {
-        box-shadow: 0px 0px 20px rgb(70, 141, 136);
     }
 
     .contact-btn {
-        color: whitesmoke;
-        background-color: rgb(78, 172, 196);
         transition: 0.3s ease;
-    }
-
-    .contact-btn:hover {
-        box-shadow: 0px 0px 20px rgb(78, 172, 196);
     }
 
     .text-small {
@@ -390,13 +362,8 @@
     }
 
     .Name {
-        font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
-        font-style: normal;
-        color: rgb(30, 94, 90);
         font-size: 8rem;
-        background: rgba(245, 245, 245, 0.8);
-        border: 2px solid rgb(0, 0, 0);
         border-radius: 1rem;
         padding: 0rem 1rem 0rem 1rem;
         margin-left: 1rem;
@@ -409,7 +376,6 @@
         display: grid;
         position: relative;
         grid-template-columns: repeat(12, 1fr);
-        z-index: 1;
     }
 
 
@@ -438,19 +404,6 @@
         position: relative;
     }
 
-    .concat-cloud-r>.cloud-bg-r:nth-child(2) {
-        animation-delay: calc(1*var(--d)/4)
-    }
-
-    .concat-cloud-r>.cloud-bg-r:nth-child(3) {
-        animation-delay: calc(2*var(--d)/4)
-    }
-
-    .concat-cloud-r>.cloud-bg-r:nth-child(4) {
-        animation-delay: calc(3*var(--d)/4)
-    }
-
-
     .cloud-bg-r {
         will-change: transform;
         /* animation: slide-r var(--d) linear infinite; */
@@ -460,20 +413,7 @@
         z-index: 1;
         opacity: 0%;
     }
-
-    @keyframes slide-r {
-        0% {
-            opacity: 100%;
-            transform: rotate(40deg) translate(-150%);
-        }
-
-        100% {
-            opacity: 100%;
-            transform: rotate(40deg) translate(150%);
-        }
-    }
-
-
+    
     .concat-cloud-l {
         --d: 13s;
         display: grid;
@@ -481,18 +421,6 @@
         top: 25%;
         left: 25%;
         position: relative;
-    }
-
-    @keyframes slide-l {
-        0% {
-            opacity: 100%;
-            transform: rotate(40deg) translate(-200%);
-        }
-
-        100% {
-            opacity: 100%;
-            transform: rotate(40deg) translate(200%);
-        }
     }
 
     .cloud-bg-l {
@@ -504,21 +432,11 @@
     }
 
     .land-bg {
-        /* background: black; */
-        background: linear-gradient(rgb(245, 240, 174), rgb(180, 246, 255));
         background-attachment: fixed;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .section-1 {
-        /* height: calc(100vh - 1rem) !important; */
-        height: 100vh;
-        /* border-radius: 0rem 0rem 15rem 0rem; */
-        /* width: calc(100vw - 6rem); */
-        width: 100vw;
-    }
-
     .land-name {
         padding: 0 0% 0 10% !important;
         display: grid;
@@ -554,26 +472,16 @@
     .shortcut-btn {
         font-size: 1rem;
         border-radius: 1rem;
-        border: 0px solid rgba(0, 0, 0, 1);
         padding: 0.5rem;
         min-width: 10rem;
     }
 
     .gh-btn {
-        color: whitesmoke;
-        display: grid;
-        grid-template-columns: auto auto;
         gap: 1rem;
         text-align: center;
         align-items: center;
         background-color: #6e5494;
-
         transition: 0.3s ease;
-
-    }
-
-    .gh-btn:hover {
-        box-shadow: 0px 0px 20px #6e5494;
     }
 
     .gh-logo {
@@ -581,23 +489,11 @@
     }
 
     .abt-btn {
-        color: whitesmoke;
-        background-color: rgb(70, 141, 136);
         transition: 0.3s ease;
-    }
-
-    .abt-btn:hover {
-        box-shadow: 0px 0px 20px rgb(70, 141, 136);
     }
 
     .contact-btn {
-        color: whitesmoke;
-        background-color: rgb(78, 172, 196);
         transition: 0.3s ease;
-    }
-
-    .contact-btn:hover {
-        box-shadow: 0px 0px 20px rgb(78, 172, 196);
     }
 
     .text-small {
@@ -606,13 +502,8 @@
     }
 
     .Name {
-        font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
-        font-style: normal;
-        color: rgb(30, 94, 90);
         font-size: 9rem;
-        background: rgba(245, 245, 245, 0.8);
-        border: 2px solid rgb(0, 0, 0);
         border-radius: 2rem;
         padding: 0rem 1rem 0rem 1rem;
         margin-left: 1rem;
@@ -645,52 +536,6 @@
 
     }
 
-    @keyframes fly-in {
-        0% {
-            opacity: 100%;
-            transform: translate(100%, 55%);
-            scale: 50%;
-        }
-
-        50% {
-            opacity: 100%;
-            transform: translate(-20%, -20%);
-            scale: 50%;
-        }
-
-        100% {
-            opacity: 100%;
-            transform: translate(0%, 0%);
-            scale: 50%;
-        }
-    }
-
-    @keyframes fly-lr {
-        0% {
-            opacity: 100%;
-            transform: translate(0%, 0%);
-            scale: 50%;
-        }
-
-        20% {
-            opacity: 100%;
-            transform: translate(20%, -10%);
-            scale: 45%;
-        }
-
-        70% {
-            opacity: 100%;
-            transform: translate(15%, -70%);
-            scale: 40%;
-        }
-
-        100% {
-            opacity: 100%;
-            transform: translate(0%, 0%);
-            scale: 50%;
-        }
-    }
-
     .concat-cloud-r {
         --d: 15s;
         display: grid;
@@ -699,19 +544,6 @@
         left: 30%;
         position: relative;
     }
-
-    .concat-cloud-r>.cloud-bg-r:nth-child(2) {
-        animation-delay: calc(1*var(--d)/4)
-    }
-
-    .concat-cloud-r>.cloud-bg-r:nth-child(3) {
-        animation-delay: calc(2*var(--d)/4)
-    }
-
-    .concat-cloud-r>.cloud-bg-r:nth-child(4) {
-        animation-delay: calc(3*var(--d)/4)
-    }
-
 
     .cloud-bg-r {
         will-change: transform;
@@ -722,19 +554,6 @@
         opacity: 0%;
     }
 
-    @keyframes slide-r {
-        0% {
-            opacity: 100%;
-            transform: rotate(40deg) translate(-150%);
-        }
-
-        100% {
-            opacity: 100%;
-            transform: rotate(40deg) translate(150%);
-        }
-    }
-
-
     .concat-cloud-l {
         --d: 13s;
         display: grid;
@@ -742,18 +561,6 @@
         top: 25%;
         left: 25%;
         position: relative;
-    }
-
-    @keyframes slide-l {
-        0% {
-            opacity: 100%;
-            transform: rotate(40deg) translate(-200%);
-        }
-
-        100% {
-            opacity: 100%;
-            transform: rotate(40deg) translate(200%);
-        }
     }
 
     .cloud-bg-l {
@@ -765,7 +572,6 @@
     }
 
     .land-bg {
-        /* background: linear-gradient(rgb(245, 240, 174), rgb(180, 246, 255)); */
         background-attachment: fixed;
     }
 }
