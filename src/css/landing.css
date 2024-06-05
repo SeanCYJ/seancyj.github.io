@@ -65,7 +65,7 @@
 .shortcut-btn {
     font-size: 1rem;
     border-radius: 0.6rem;
-    /* border: 0px solid rgba(0, 0, 0, 1); */
+    border: 0px solid rgba(0, 0, 0, 1);
     padding: 0.5rem;
     display: flex;
     justify-content: center;
@@ -154,7 +154,7 @@
     max-width: 100vw;
     grid-row: 1;
     grid-column: 1 / span 8;
-    z-index: 1;
+    z-index: 5;
     opacity: 0;
     will-change: transform, opacity;
     /* animation: fly-in 5s ease-out 3s, fly-lr 15s linear 8s infinite; */
@@ -213,6 +213,7 @@
     width: 1000px;
     top: 25%;
     left: 30%;
+    z-index: 1;
     position: relative;
 }
 
@@ -287,145 +288,6 @@
     background-attachment: fixed;
 }
 
-@media screen and (min-width: 1200px) {
-    .land-name {
-        padding: 0 0% 0 10% !important;
-        display: grid;
-        position: relative;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .landing-text {
-        padding-top: 35vh;
-        overflow: hidden;
-        grid-row: 1;
-        grid-column: 1 / span 8;
-        z-index: 2;
-        animation: name-in 2s ease-out;
-        animation-delay: 3.2s;
-        animation-fill-mode: both;
-    }
-
-    .short-cuts {
-        padding: 1rem 1rem 1rem 1rem;
-        width: fit-content;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: none;
-        gap: 1rem;
-        opacity: 0%;
-        overflow: visible;
-        animation: slide-lr 0.5s ease-in;
-        animation-delay: 5s;
-        animation-fill-mode: forwards;
-    }
-
-    .shortcut-btn {
-        font-size: 1rem;
-        border-radius: 1rem;
-        padding: 0.5rem;
-        min-width: 10rem;
-    }
-
-    .gh-btn {
-        gap: 1rem;
-        text-align: center;
-        align-items: center;
-        background-color: #6e5494;
-        transition: 0.3s ease;
-    }
-
-    .gh-logo {
-        width: 1rem;
-    }
-
-    .abt-btn {
-        transition: 0.3s ease;
-    }
-
-    .contact-btn {
-        transition: 0.3s ease;
-    }
-
-    .text-small {
-        font-size: 32px;
-        padding-left: 1rem;
-    }
-
-    .Name {
-        font-weight: 400;
-        font-size: 9rem;
-        border-radius: 2rem;
-        padding: 0rem 1rem 0rem 1rem;
-        margin-left: 1rem;
-    }
-
-    .landing-cont {
-        visibility: visible;
-        padding-top: 25vh;
-        margin-left: -10vw;
-        display: grid;
-        position: relative;
-        grid-template-columns: repeat(12, 1fr);
-        z-index: 1;
-    }
-
-
-    .landing-image {
-        margin-top: -15vh;
-        margin-left: 10vw;
-        scale: 50%;
-        object-fit: contain;
-        overflow: hidden;
-        max-width: 100vw;
-        grid-row: 1;
-        grid-column: 1 / span 8;
-        z-index: 1;
-        opacity: 0;
-        will-change: transform, opacity;
-        animation: fly-in 5s ease-out 3s, fly-lr 15s linear 8s infinite;
-
-    }
-
-    .concat-cloud-r {
-        --d: 15s;
-        display: grid;
-        width: 1000px;
-        top: 25%;
-        left: 30%;
-        position: relative;
-    }
-
-    .cloud-bg-r {
-        will-change: transform;
-        animation: slide-r var(--d) linear infinite;
-        grid-area: 1/1;
-        width: 100vw;
-        z-index: 1;
-        opacity: 0%;
-    }
-
-    .concat-cloud-l {
-        --d: 13s;
-        display: grid;
-        width: 1000px;
-        top: 25%;
-        left: 25%;
-        position: relative;
-    }
-
-    .cloud-bg-l {
-        will-change: transform;
-        grid-area: 1/1;
-        width: 100vw;
-        z-index: 1;
-        opacity: 0%;
-    }
-
-    .land-bg {
-        background-attachment: fixed;
-    }
-}
 
 @media screen and (min-width: 700px) {
     .land-name {
@@ -545,6 +407,146 @@
         will-change: transform;
         /* animation: slide-r var(--d) linear infinite; */
         animation: none;
+        grid-area: 1/1;
+        width: 100vw;
+        z-index: 1;
+        opacity: 0%;
+    }
+
+    .concat-cloud-l {
+        --d: 13s;
+        display: grid;
+        width: 1000px;
+        top: 25%;
+        left: 25%;
+        position: relative;
+    }
+
+    .cloud-bg-l {
+        will-change: transform;
+        grid-area: 1/1;
+        width: 100vw;
+        z-index: 1;
+        opacity: 0%;
+    }
+
+    .land-bg {
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .land-name {
+        padding: 0 0% 0 10% !important;
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .landing-text {
+        padding-top: 35vh;
+        overflow: hidden;
+        grid-row: 1;
+        grid-column: 1 / span 8;
+        z-index: 2;
+        animation: name-in 2s ease-out;
+        animation-delay: 3.2s;
+        animation-fill-mode: both;
+    }
+
+    .short-cuts {
+        padding: 1rem 1rem 1rem 1rem;
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: none;
+        gap: 1rem;
+        opacity: 0%;
+        overflow: visible;
+        animation: slide-lr 0.5s ease-in;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+    }
+
+    .shortcut-btn {
+        font-size: 1rem;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        min-width: 10rem;
+    }
+
+    .gh-btn {
+        gap: 1rem;
+        text-align: center;
+        align-items: center;
+        background-color: #6e5494;
+        transition: 0.3s ease;
+    }
+
+    .gh-logo {
+        width: 1rem;
+    }
+
+    .abt-btn {
+        transition: 0.3s ease;
+    }
+
+    .contact-btn {
+        transition: 0.3s ease;
+    }
+
+    .text-small {
+        font-size: 32px;
+        padding-left: 1rem;
+    }
+
+    .Name {
+        font-weight: 400;
+        font-size: 9rem;
+        border-radius: 2rem;
+        padding: 0rem 1rem 0rem 1rem;
+        margin-left: 1rem;
+    }
+
+    .landing-cont {
+        visibility: visible;
+        padding-top: 25vh;
+        margin-left: -10vw;
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(12, 1fr);
+        z-index: 1;
+    }
+
+
+    .landing-image {
+        margin-top: -15vh;
+        margin-left: 5vw;
+        scale: 50%;
+        object-fit: contain;
+        overflow: hidden;
+        max-width: 100vw;
+        grid-row: 1;
+        grid-column: 1 / span 8;
+        z-index: 1;
+        opacity: 0;
+        will-change: transform, opacity;
+        animation: fly-in 5s ease-out 3s, fly-lr 15s linear 8s infinite;
+
+    }
+
+    .concat-cloud-r {
+        --d: 15s;
+        display: grid;
+        width: 1000px;
+        top: 25%;
+        left: 40%;
+        position: relative;
+    }
+
+    .cloud-bg-r {
+        will-change: transform;
+        animation: slide-r var(--d) linear infinite;
         grid-area: 1/1;
         width: 100vw;
         z-index: 1;

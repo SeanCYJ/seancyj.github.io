@@ -1,5 +1,5 @@
 import React from 'react';
-import '/src/css/expBlock.css';
+import '/src/css/exp-block.css';
 
 
 export function ExpFilterBtn({buttonText, index, onClick, clicked}) {

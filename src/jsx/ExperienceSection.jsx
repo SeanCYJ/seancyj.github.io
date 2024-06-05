@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { ExpBlock } from "./ExperienceBlock";
 import { ExpFilter, ExpFilterBtn } from './ExperienceFilter';
-import '/src/css/expBlock.css';
+import '/src/css/exp-block.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
