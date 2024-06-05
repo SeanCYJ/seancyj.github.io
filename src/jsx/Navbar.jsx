@@ -7,7 +7,6 @@ import '/src/css/navbar.css';
 const NavBar = () => {
     const navItems = ['', 'About', 'Work', 'Contact'];
     const paths = ['/', '/about', '/experience', '/contact'];
-    // const [isPending, startTransition] = useTransition();
     const [currentPage, setCurrentPage] = useState(navItems[0]);
     const [active, setActive] = useState(0);
 
@@ -21,16 +20,11 @@ const NavBar = () => {
     useEffect(() => {
         const urlRef = window.location.href;
         const navRef = urlRef.substring(urlRef.lastIndexOf('/'));
-        // console.log(paths[active]);
         setCurrentPage(navItems[active]);
         if (paths[active] != navRef) {
             handlePageChange(navRef, paths.indexOf(navRef));
         }
         window.onpopstate = () => {
-            // const urlRef = window.location.href;
-            // const navRef = urlRef.substring(urlRef.lastIndexOf('/'));
-            // console.log(urlRef.lastIndexOf('/'));
-            // console.log(navRef);
             handlePageChange(navRef, paths.indexOf(navRef));
         }
     })

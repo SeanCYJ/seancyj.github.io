@@ -2,7 +2,6 @@ import React from "react";
 import '/src/css/about.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// export function AboutSection() {
 const AboutSection = () => {    
     return (
         <>

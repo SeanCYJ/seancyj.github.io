@@ -1,19 +1,15 @@
-import React, {useEffect} from "react";
+import React from "react";
 import { useNavigate } from 'react-router-dom';
 import '/src/css/landing.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-// export function LandingSection() {
 const LandingSection = () => {
     const navigate = useNavigate();
 
     const handlePageChange = (path) => {
         navigate(path);
     };
-
-    // useEffect(() => {
-    // })
 
     return (
         <>

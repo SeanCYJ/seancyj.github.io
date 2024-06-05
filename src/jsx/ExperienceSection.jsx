@@ -1,12 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect} from 'react';
 import { ExpBlock } from "./ExperienceBlock";
 import { ExpFilter, ExpFilterBtn } from './ExperienceFilter';
 import '/src/css/expBlock.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// extract json
-// sent to filter component and output
-// export function ExpJson() {
+
 const ExpSection = () => {
     // -------------------------Get JSON-------------------------------------------------
     // const invisRef = useRef(null);
@@ -37,9 +35,6 @@ const ExpSection = () => {
         };
 
         fetchData(); // Call the fetchData function when the component mounts
-
-        // setKeep(ExpFilter({data}, selectedParams));
-        // Interface();
 
             // Optional cleanup function
             return () => {
@@ -81,20 +76,9 @@ const ExpSection = () => {
             updatedClickedButtons[0] = true;
         }
 
-
-        console.log("up-clk-btn: " + updatedClickedButtons);
-        console.log("up-slt-Para: " + updatedSelectedParams);
-        // console.log("FilterReturn: " + ExpFilter({data}, selectedParams));
-
         setSelectedParams(updatedSelectedParams);
         setKeep(ExpFilter({data}, updatedSelectedParams));
         setClickedButtons(updatedClickedButtons);
-
-        
-        // console.log("clk-btn: " + clickedButtons);
-        // console.log("slt-Para: " + selectedParams);
-        // console.log("FilterReturn: " + ExpFilter({data}, selectedParams));
-        
     };
 
 

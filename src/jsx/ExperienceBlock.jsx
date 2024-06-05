@@ -78,13 +78,6 @@ export function ExpBlock({data}) {
       if (y < -window.innerHeight * 0.1) {
         setVisibleDiv(null);
         updatePosition();
-      } else {
-        // setTimeout(() => {
-        //   setPosition({
-        //     x: position.x,
-        //     y: y < window.innerHeight*0.1 ? y-10 : y
-        //   });
-        // }, 1000);
       }
     }
   });
@@ -118,7 +111,6 @@ export function ExpBlock({data}) {
 
   return (
     <>
-      {/* Render the fetched data */}
       {data && (
         <div className='expBlock-cont'>
           {data.map(item => (
@@ -130,16 +122,9 @@ export function ExpBlock({data}) {
             style={{ pointerEvents: disablePointerEvents ? 'none' : 'auto'}}
             >
                 
-                <div className='textCont'>
-                    <span>{item.title}</span>
-                    {/* <br/> */}
-                    {/* <span>{item.date}</span><br/> */}
-                    {/* <span>{item.description}</span> */}
-                </div>
-
-                {/* <div className='imgCont'>
-                    <span>{item["picture-link"]}</span><br/>
-                </div> */}
+              <div className='textCont'>
+                <span>{item.title}</span>
+              </div>
             </button>
           ))}
           {/* THE EXPANDED EXP DESCRIPTION */}
