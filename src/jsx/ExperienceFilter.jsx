@@ -1,5 +1,6 @@
 import React from 'react';
 import '/src/css/exp-block.css';
+import PropTypes from 'prop-types';
 
 
 export function ExpFilterBtn({buttonText, index, onClick, clicked}) {
@@ -13,6 +14,13 @@ export function ExpFilterBtn({buttonText, index, onClick, clicked}) {
             {buttonText}
             </button>
     );
+}
+
+ExpFilterBtn.PropTypes = {
+    buttonText: PropTypes.string.isRequired,
+    index: PropTypes.string.isRequired,
+    onClick: PropTypes.func,
+    clicked: PropTypes.arrayOf(PropTypes.bool).isRequired
 }
 
 
@@ -29,4 +37,20 @@ export function ExpFilter({data}, para) {
         });
     }
 }
+
+ExpFilter.PropTypes = {
+    data: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        role: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        location: PropTypes.string.isRequired,
+        date: PropTypes.string.isRequired,
+        "picture-link": PropTypes.string.isRequired,
+        category: PropTypes.string.isRequired
+      })
+    ).isRequired, 
+    para: PropTypes.arrayOf(PropTypes.string).isRequired,
+  };
     

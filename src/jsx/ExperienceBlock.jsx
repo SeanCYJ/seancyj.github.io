@@ -23,6 +23,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { useDrag } from '@use-gesture/react';
 import '/src/css/exp-block.css';
+import PropTypes from 'prop-types';
 
 // the html code for a single exp card
 export function ExpBlock({data}) {
@@ -169,4 +170,20 @@ export function ExpBlock({data}) {
       )}
     </>
   );
-}
+};
+
+
+ExpBlock.PropTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      role: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      location: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+      "picture-link": PropTypes.string.isRequired,
+      category: PropTypes.string.isRequired
+    })
+  ).isRequired
+};

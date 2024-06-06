@@ -19,7 +19,7 @@ const ContactSection = () => {
             window.location = "mailto:" + output;
         }
     }
-
+    
     const halfLink = 'https://drive.google.com/uc?export=download&id=';
     const FullLink = () => {
         return halfLink + '1xj3A1j9RS0MYub80x4EUQHvDmKNilxDR';
