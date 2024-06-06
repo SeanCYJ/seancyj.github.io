@@ -52,7 +52,6 @@ const ExpSection = () => {
         const filterPara = e.currentTarget.innerHTML;
         updatedClickedButtons[index] = !updatedClickedButtons[index];
 
-        console.log(index);
 
         if (updatedClickedButtons[index] && index > 0) {
             // if btns other than featured is clicked

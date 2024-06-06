@@ -16,9 +16,9 @@ export function ExpFilterBtn({buttonText, index, onClick, clicked}) {
     );
 }
 
-ExpFilterBtn.PropTypes = {
+ExpFilterBtn.propTypes = {
     buttonText: PropTypes.string.isRequired,
-    index: PropTypes.string.isRequired,
+    index: PropTypes.number.isRequired,
     onClick: PropTypes.func,
     clicked: PropTypes.arrayOf(PropTypes.bool).isRequired
 }
@@ -27,7 +27,6 @@ ExpFilterBtn.PropTypes = {
 // checks whether the parameters selected is associated with the experience
 // builds out the exp cards
 export function ExpFilter({data}, para) {
-    console.log("Exp Para: " + para);
     const sltpara = new Set(para);
 
     if (data) {
@@ -38,7 +37,7 @@ export function ExpFilter({data}, para) {
     }
 }
 
-ExpFilter.PropTypes = {
+ExpFilter.propTypes = {
     data: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string.isRequired,

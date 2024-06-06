@@ -66,9 +66,6 @@ export function ExpBlock({data}) {
   }, []);
 
   const bind = useDrag(({ dragging, movement: [x, y] }) => {
-    console.log("Dragging:", dragging, "Movement:", x, y);
-    console.log("Cursor Position:", cursorPosition.x, cursorPosition.y);
-    console.log("Position:", position.x, position.y);
     if (isMobile && y < window.innerHeight * 0.1) {
       setPosition({
         x: position.x,
@@ -173,7 +170,7 @@ export function ExpBlock({data}) {
 };
 
 
-ExpBlock.PropTypes = {
+ExpBlock.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
