@@ -149,7 +149,7 @@ export function ExpBlock({data}) {
                  onMouseUp={isMobile ? handleMouseUp() : null}
               >
                 <div className='expD-img-cont'>
-                  <img className='expD-img' src={'../' + item["picture-link"] + '.png'}/>
+                  <img className='expD-img' src={visibleDiv === item.title ? '../' + item["picture-link"] + '.png' : ''}/>
                 </div>
                 <div className='expD-text-cont'>
                   <span className='expD-title'>{item.title}</span><br/>

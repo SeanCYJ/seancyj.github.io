@@ -20,8 +20,8 @@ footer {
     bottom: 0rem;
     left: 1rem;
     background: rgba(0, 174, 255, 0);
-    font-size: 0.6rem;
-    color: rgb(150, 150, 150);
+    font-size: 0.5rem;
+    color: rgb(120, 120, 120);
 }
 
 #root {
@@ -63,6 +63,15 @@ footer {
         scroll-snap-type: y proximity;
     }
 
+    footer {
+        position: fixed;
+        bottom: 0rem;
+        left: 1rem;
+        background: rgba(0, 174, 255, 0);
+        font-size: 0.6rem;
+        color: rgb(150, 150, 150);
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -74,5 +83,14 @@ footer {
     h2 {
         font-weight: 400;
         padding: 5rem 5vw 3rem 20vw !important;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0rem;
+        left: 1rem;
+        background: rgba(0, 174, 255, 0);
+        font-size: 0.6rem;
+        color: rgb(150, 150, 150);
     }
 }
