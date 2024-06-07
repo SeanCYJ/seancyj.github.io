@@ -34,7 +34,7 @@ export function AccordianTemp({index, title, content}) {
            <button 
            id={index}
            className="accordian-title"
-           >+ {title}</button> 
+           ><span>{title}</span><span>+</span></button> 
            <div 
            id={index}
            className={Expand ? "accordian-content expand" : "accordian-content"}

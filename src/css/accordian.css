@@ -4,6 +4,8 @@
     border-bottom: 2px solid rgba(0,0,0,1);
     padding: 0.5rem 0rem;
     margin: -2px 0px;
+    max-height: 1000px;
+    transition: max-height 0.5s ease;
 }
 
 .accordian-title {
@@ -13,6 +15,9 @@
     background: rgba(0,0,0,0);
     font-weight: 500;
     font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     /* text-decoration: underline; */
 }
 
