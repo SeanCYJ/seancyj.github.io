@@ -25,6 +25,7 @@
     height: 0px;
     opacity: 0%;
     font-size: 0.8rem;
+    transform: translate(20%,0%);
     overflow: hidden;
 }
 
@@ -36,6 +37,7 @@
 .expand {
     height: fit-content;
     opacity: 100%;
+    transform: translate(0%,0%);
     transition: 0.3s ease 0.1s;
 }
 
