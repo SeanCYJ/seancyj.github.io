@@ -1,0 +1,69 @@
+.accordian-cont {
+    height: fit-content;
+    border-top: 2px solid rgba(0,0,0,1);
+    border-bottom: 2px solid rgba(0,0,0,1);
+    padding: 0.5rem 0rem;
+    margin: -2px 0px;
+}
+
+.accordian-title {
+    font-family: "DM Mono", monospace !important;
+    font-style: normal;
+    border: none;
+    background: rgba(0,0,0,0);
+    font-weight: 500;
+    font-size: 1rem;
+    /* text-decoration: underline; */
+}
+
+.accordian-content {
+    height: 0px;
+    opacity: 0%;
+    font-size: 0.8rem;
+    overflow: hidden;
+}
+
+/* .accordian-content>.acc-text {
+    white-space: 'pre-line';
+} */
+
+
+.expand {
+    height: fit-content;
+    opacity: 100%;
+    transition: 0.3s ease 0.1s;
+}
+
+@media screen and (min-width: 1200px) {
+    .accordian-cont {
+        height: fit-content;
+        border-top: 2px solid rgba(0,0,0,1);
+        /* border-bottom: 2px solid rgba(0,0,0,1); */
+        padding: 0.5rem 0rem;
+    }
+    
+    .accordian-title {
+        border: none;
+        background: rgba(0,0,0,0);
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    
+    .accordian-content {
+        height: 0px;
+        opacity: 0%;
+        font-size: 1rem;
+        overflow: hidden;
+    }
+    
+    /* .accordian-content>.acc-text {
+        white-space: 'pre-line';
+    } */
+    
+    
+    .expand {
+        height: fit-content;
+        opacity: 100%;
+        transition: 0.3s ease 0.1s;
+    }
+}
