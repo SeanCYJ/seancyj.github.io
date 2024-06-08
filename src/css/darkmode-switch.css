@@ -4,7 +4,6 @@
     right: 1rem;
     top: 1rem;
     z-index: 2;
-    opacity: 10%;
     transition: 0.3s ease;
 }
 
@@ -26,10 +25,6 @@
     outline: none;
 }
 
-.dm-btn-cont:hover {
-    opacity: 100%;
-}
-
 .dm-btn>.light {
     font-weight: 600;
     color: rgb(255, 136, 0);
@@ -46,7 +41,7 @@
 .dm-btn.dm>.light {
     font-weight: 600;
     color: rgb(255, 136, 0);
-    opacity: 50%;
+    opacity: 20%;
 }
 
 
@@ -68,6 +63,11 @@
 
 .btn-descrip {
     font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.btn-descrip.dm {
+    color: rgb(150, 150, 150);
 }
 
 .inop-tag {

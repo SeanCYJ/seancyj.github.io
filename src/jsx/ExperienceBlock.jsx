@@ -20,13 +20,18 @@
 //     },
 // }
 
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect, useRef, useContext} from 'react';
 import { useDrag } from '@use-gesture/react';
 import '/src/css/exp-block.css';
 import PropTypes from 'prop-types';
+import { DarkModeContext } from "./DarkModeContext";
+
 
 // the html code for a single exp card
 export function ExpBlock({data}) {
+  const {darkTheme} = useContext(DarkModeContext);
+
+
   const [visibleDiv, setVisibleDiv] = useState(null);
   const [dragging, setDrag] = useState(false);
 
@@ -113,7 +118,7 @@ export function ExpBlock({data}) {
         <div className='expBlock-cont'>
           {data.map(item => (
             <button 
-            className="expBlock" 
+            className={darkTheme ? "expBlock dm" : "expBlock"} 
             key={item.id}
             onTouchEnd={() => toggleDiv(item.title)}
             onClick={() => toggleDiv(item.title)}

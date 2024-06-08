@@ -1,11 +1,14 @@
 // src/components/NavBar.js
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
 import '/src/css/navbar.css';
 import DarkModeToggle from './DarkModeSwitch';
+import { DarkModeContext } from "./DarkModeContext";
+
 
 
 const NavBar = () => {
+    const {darkTheme, ToggleDM} = useContext(DarkModeContext);
     const navItems = ['', 'About', 'Work', 'Contact'];
     const paths = ['/', '/about', '/experience', '/contact'];
     const [currentPage, setCurrentPage] = useState(navItems[0]);
@@ -35,8 +38,8 @@ const NavBar = () => {
     
     return (
         <>
-        <nav>
-        <div className="pill" style={{ left: `${active/4 * 98}%`}} />
+        <nav className={darkTheme ? 'dm' : ''}>
+        <div className={darkTheme ? "pill dm" : "pill"} style={{ left: `${active/4 * 98}%`}} />
         <ul>
             {navItems.map((item, index) => (
                 <li key = {index}

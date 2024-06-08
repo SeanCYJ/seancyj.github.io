@@ -10,14 +10,14 @@ const DarkModeToggle = () => {
     return(
         <>
             <div className="dm-btn-cont">
-                <span className="btn-descrip">Mode</span>
-                <button className={darkTheme ?"dm-btn dm" : "dm-btn"}
+                <span className={darkTheme ? "btn-descrip dm" : "btn-descrip"}>Mode</span>
+                <button className={darkTheme ? "dm-btn dm" : "dm-btn"}
                     onClick={ToggleDM}
                 >
                     <div className="light">LIGHT</div>
                     <div className="dark">DARK</div>
                 </button>
-                <div className="inop-tag">INOP</div>
+                {/* <div className="inop-tag">INOP</div> */}
             </div>
         </>
     )

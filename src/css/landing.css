@@ -2,6 +2,11 @@
     height: 100vh;
     overflow: hidden;
     width: 100vw;
+    color: rgb(0, 0, 0);
+}
+
+.section-1.dm {
+    color: rgb(200, 200, 200);
 }
 
 .land-name {
@@ -21,6 +26,9 @@
     animation-delay: 0s;
     animation-fill-mode: both;
 }
+
+
+
 
 @keyframes name-in {
     0% {
@@ -50,6 +58,10 @@
     animation: slide-lr 0.5s ease-in;
     animation-delay: 1.8s;
     animation-fill-mode: forwards;
+}
+
+.short-cuts.dm {
+    filter: brightness(0.8);
 }
 
 @keyframes slide-lr {
@@ -116,6 +128,7 @@
     box-shadow: 0px 0px 20px rgb(78, 172, 196);
 }
 
+
 .text-small {
     font-size: 32px;
     padding-left: calc(15vw - 1.5rem);
@@ -132,7 +145,14 @@
     border-radius: 1rem;
     padding: 0rem 1rem 0rem 1rem;
     margin-left: calc(15vw - 2rem);
+    box-shadow: none;
 }
+
+.Name.dm {
+    filter: brightness(0.8);
+    box-shadow: 0px 0px 15px rgb(200, 200, 200);
+}
+
 
 .landing-cont {
     /* visibility: hidden; */
@@ -159,6 +179,10 @@
     will-change: transform, opacity;
     /* animation: fly-in 5s ease-out 3s, fly-lr 15s linear 8s infinite; */
     animation: none;
+}
+
+.landing-image.dm {
+    filter: brightness(0.6) hue-rotate(-20deg);
 }
 
 @keyframes fly-in {
@@ -216,6 +240,15 @@
     z-index: 1;
     position: relative;
 }
+
+.concat-cloud-r.dm {
+    /* filter: brightness(0.3) hue-rotate(120deg) saturate(2); */
+    filter: brightness(0.3);
+
+}
+
+
+
 
 .concat-cloud-r>.cloud-bg-r:nth-child(2) {
     animation-delay: calc(1*var(--d)/4)
@@ -282,11 +315,6 @@
     opacity: 0%;
 }
 
-.land-bg {
-    /* background: black; */
-    background: linear-gradient(rgb(245, 240, 174), rgb(180, 246, 255));
-    background-attachment: fixed;
-}
 
 
 @media screen and (min-width: 700px) {

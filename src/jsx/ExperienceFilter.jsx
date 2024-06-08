@@ -1,14 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import '/src/css/exp-block.css';
 import PropTypes from 'prop-types';
+import { DarkModeContext } from "./DarkModeContext";
+
 
 
 export function ExpFilterBtn({buttonText, index, onClick, clicked}) {
+    const {darkTheme} = useContext(DarkModeContext);
     const cssName = ["ftr-btn", "ftr-btn selected"];
     return (
             <button key={index} 
             id={index}
-            className={clicked[index] ? cssName[1] : cssName[0]}
+            className={clicked[index] ? cssName[1] : darkTheme ? cssName[0] + ' dm' : cssName[0]}
             onClick={onClick}
             >
             {buttonText}

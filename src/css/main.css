@@ -2,6 +2,11 @@ body {
     font-family: "DM Mono", monospace !important;
     font-weight: 500;
     font-style: normal;
+    color:rgb(0, 0, 0);
+}
+
+body.dm {
+    color: rgb(180, 180, 180);
 }
 
 h2 {
@@ -44,6 +49,18 @@ footer {
 
 .row {
     min-height: 100vh;
+}
+
+.land-bg {
+    /* background: black; */
+    min-height: 100vh;
+    background: linear-gradient(rgb(245, 240, 174), rgb(180, 246, 255));
+    background-attachment: fixed;
+}
+
+.land-bg.dm {
+    background: linear-gradient(rgb(44, 33, 48), rgb(48, 68, 71));
+    background-attachment: fixed;
 }
 
 @media screen and (min-width: 1200px) {
