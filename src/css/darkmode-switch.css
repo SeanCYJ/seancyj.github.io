@@ -42,13 +42,21 @@
     width: 3rem;
 }
 
-/* .dm-btn:hover > .dark {
+
+.dm-btn.dm>.light {
+    font-weight: 600;
+    color: rgb(255, 136, 0);
+    opacity: 50%;
+}
+
+
+.dm-btn.dm>.dark {
     font-weight: 600;
     color: rgb(55, 232, 255);
     border: 2px solid rgb(55, 232, 255);
 }
 
-.dm-btn:hover > .light {
+/* .dm-btn:hover > .light {
     font-weight: 400;
     color: rgba(255, 255, 255, 0);
 } */

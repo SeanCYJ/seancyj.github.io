@@ -38,7 +38,7 @@ export function AccordianTemp({index, title, content}) {
            <div 
            id={index}
            className={Expand ? "accordian-content expand" : "accordian-content"}
-           >{UnpackContent(content)}</div>
+           ><br/>{UnpackContent(content)}</div>
         </div>
     </>);
 }

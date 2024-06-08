@@ -2,6 +2,7 @@
 import React, {useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import '/src/css/navbar.css';
+import DarkModeToggle from './DarkModeSwitch';
 
 
 const NavBar = () => {
@@ -49,6 +50,7 @@ const NavBar = () => {
         </nav>
         <button className="abt-btn-work" style={{display: currentPage === 'About' ? 'flex' : 'none'}} onClick={() => {handlePageChange('Work', 2)}}>Work ▶</button>
         <button className="exp-btn-contact" style={{display: currentPage === 'Work' ? 'flex' : 'none'}} onClick={() => {handlePageChange('Contact', 3)}}>Contact ▶</button>
+        <DarkModeToggle/>
         </>
     );
 };
