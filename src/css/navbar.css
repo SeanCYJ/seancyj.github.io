@@ -89,6 +89,11 @@ nav>ul>li>a:hover {
     z-index: 2;
 }
 
+.exp-btn-contact.dm {
+    background: rgba(138, 55, 124, 0.8);
+    color: rgb(220, 220, 220);
+}
+
 .abt-btn-work {
     font-family: "DM Mono", monospace !important;
     font-weight: 500;
@@ -108,4 +113,9 @@ nav>ul>li>a:hover {
     bottom: 3rem;
     transform: translateX(-50%);
     z-index: 10;
+}
+
+.abt-btn-work.dm {
+    background: rgba(138, 55, 124, 0.8);
+    color: rgb(220, 220, 220);
 }

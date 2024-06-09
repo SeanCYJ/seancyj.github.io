@@ -1,9 +1,11 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import '/src/css/contact.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { DarkModeContext } from "./DarkModeContext";
+
 
 const ContactSection = () => {
-
+    const {darkTheme} = useContext(DarkModeContext);
     const [output, setOutput] = useState('Email');
     const [link, setlink] = useState('My CV');
 
@@ -19,7 +21,7 @@ const ContactSection = () => {
             window.location = "mailto:" + output;
         }
     }
-    
+
     const halfLink = 'https://drive.google.com/uc?export=download&id=';
     const FullLink = () => {
         return halfLink + '1xj3A1j9RS0MYub80x4EUQHvDmKNilxDR';
@@ -42,7 +44,7 @@ const ContactSection = () => {
                         <div>
                             <div className="contact-txt">Thank you for your time. Feel free to reach out if you have any questions or collaboration ideas. I am always looking for a new challenge.</div>
                         </div>
-                        <div className="contact-btn-cont">
+                        <div className={darkTheme ? "contact-btn-cont dm" : "contact-btn-cont"}>
                             <button className="ctact-btn ctact-cv" onClick={CVdownload}>{link}</button>
                             <button className="ctact-btn ctact-email" onClick={EmailReveal}>{output}</button>
                             <button className="ctact-btn ctact-lin" onClick={() => {window.open('https://www.linkedin.com/in/sean-choo/')}}>

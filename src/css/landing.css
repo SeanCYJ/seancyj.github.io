@@ -61,7 +61,7 @@
 }
 
 .short-cuts.dm {
-    filter: brightness(0.8);
+    filter: brightness(0.9);
 }
 
 @keyframes slide-lr {
@@ -149,7 +149,9 @@
 }
 
 .Name.dm {
-    filter: brightness(0.8);
+    filter: brightness(0.9);
+    color: rgb(30, 94, 90);
+    background: rgba(240, 240, 240, 0.8);
     box-shadow: 0px 0px 15px rgb(200, 200, 200);
 }
 

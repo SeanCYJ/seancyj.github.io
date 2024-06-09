@@ -11,7 +11,7 @@ export function ExpFilterBtn({buttonText, index, onClick, clicked}) {
     return (
             <button key={index} 
             id={index}
-            className={clicked[index] ? cssName[1] : darkTheme ? cssName[0] + ' dm' : cssName[0]}
+            className={(clicked[index] ? cssName[1] : cssName[0]) + (darkTheme ? ' dm' : '')}
             onClick={onClick}
             >
             {buttonText}

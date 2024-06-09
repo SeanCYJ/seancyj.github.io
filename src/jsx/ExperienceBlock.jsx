@@ -135,13 +135,13 @@ export function ExpBlock({data}) {
             <div
               key={item.title}
               id={item.title}
-              className="expDescrip-bg"
+              className={darkTheme ? "expDescrip-bg dm" : "expDescrip-bg"}
               style={{ 
                 display: visibleDiv === item.title ? 'block' : 'none',
               }}
               onMouseMove={handleMouseMove}
             >
-              <div className='expDescrip-cont'
+              <div className={darkTheme ? 'expDescrip-cont dm' : 'expDescrip-cont'}
                  ref={popupRef}
                  {...(isMobile ? bind() : {})}
                  style={{
@@ -159,9 +159,9 @@ export function ExpBlock({data}) {
                 <div className='expD-text-cont'>
                   <span className='expD-title'>{item.title}</span><br/>
                   {/* <span className='expD-b'>{item.location}</span><br/><br/> */}
-                  <span className='expD-a'>{item.role}</span><br/><br/>
-                  <span className='expD-a'>{item.description}</span><br/><br/>
-                  <span className='expD-b'>{item.location} | {item.date}</span>
+                  <span className={darkTheme ? 'expD-a dm' : 'expD-a'}>{item.role}</span><br/><br/>
+                  <span className={darkTheme ? 'expD-a dm' : 'expD-a'}>{item.description}</span><br/><br/>
+                  <span className={darkTheme ? 'expD-b dm' : 'expD-b'}>{item.location} | {item.date}</span>
                 </div>
                 <button className='closeExpDescrip-btn' onTouchEnd={() => toggleDiv(item.title)} onClick={() => toggleDiv(item.title)}></button>
                 <div className='closeExpDescrip-mobile' style={{ display: isMobile ? 'block' : 'none'}}>Swipe up to close</div> 
