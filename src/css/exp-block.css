@@ -353,7 +353,7 @@
 
     .expDescrip-cont {
         position: absolute;
-        top: 10vh !important;
+        top: 15vh !important;
         left: 50% !important;
         transform: translateX(-50%);
         height: fit-content;

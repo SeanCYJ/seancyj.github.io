@@ -55,12 +55,12 @@ footer {
     /* background: black; */
     min-height: 100vh;
     background: linear-gradient(rgb(245, 240, 174), rgb(180, 246, 255));
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 .land-bg.dm {
     background: linear-gradient(rgb(44, 33, 48), rgb(48, 68, 71));
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 @media screen and (min-width: 1200px) {
