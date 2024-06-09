@@ -51,9 +51,11 @@ const NavBar = () => {
             {currentPage}
         </div> */}
         </nav>
-        <button className={darkTheme ? "abt-btn-work dm" : "abt-btn-work"} style={{display: currentPage === 'About' ? 'flex' : 'none'}} onClick={() => {handlePageChange('Work', 2)}}>Work ▶</button>
-        <button className={darkTheme ? "exp-btn-contact dm" : "exp-btn-contact"} style={{display: currentPage === 'Work' ? 'flex' : 'none'}} onClick={() => {handlePageChange('Contact', 3)}}>Contact ▶</button>
-        <DarkModeToggle/>
+        <div className='nav-aid-cont'>
+            <DarkModeToggle/>
+            <button className={darkTheme ? "abt-btn-work dm" : "abt-btn-work"} style={{display: currentPage === 'About' ? 'flex' : 'none'}} onClick={() => {handlePageChange('Work', 2)}}>Work ▶</button>
+            <button className={darkTheme ? "exp-btn-contact dm" : "exp-btn-contact"} style={{display: currentPage === 'Work' ? 'flex' : 'none'}} onClick={() => {handlePageChange('Contact', 3)}}>Contact ▶</button>
+        </div>
         </>
     );
 };

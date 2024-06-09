@@ -202,7 +202,7 @@
 .expDescrip-cont.dm {
     filter: brightness(0.9);
     background: rgba(30, 30, 30, 0.9); 
-    box-shadow: 0px 0px 10px rgb(10, 10, 10);
+    /* box-shadow: 0px 0px 10px rgb(10, 10, 10); */
 }
 
 @keyframes slide-in {

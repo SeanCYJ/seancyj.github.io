@@ -68,6 +68,20 @@ nav>ul>li>a:hover {
     background: rgba(63, 32, 58, 0.8);
 }
 
+.nav-aid-cont {
+    position: fixed;
+    left: 50%;
+    bottom: 3rem;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: auto 1.5rem auto; */
+    gap: 0.5rem;
+    align-items: center;
+    height: 2rem;
+    z-index: 10;
+}
+
 .exp-btn-contact {
     font-family: "DM Mono", monospace !important;
     font-weight: 500;
@@ -82,11 +96,10 @@ nav>ul>li>a:hover {
     cursor: pointer;
     min-width: 5rem;
     color: whitesmoke;
-    position: fixed;
+    /* position: fixed;
     left: 50%;
     bottom: 3rem;
-    transform: translateX(-50%);
-    z-index: 2;
+    transform: translateX(-50%); */
 }
 
 .exp-btn-contact.dm {
@@ -108,11 +121,10 @@ nav>ul>li>a:hover {
     cursor: pointer;
     min-width: 5rem;
     color: whitesmoke;
-    position: fixed;
+    /* position: fixed;
     left: 50%;
     bottom: 3rem;
-    transform: translateX(-50%);
-    z-index: 10;
+    transform: translateX(-50%); */
 }
 
 .abt-btn-work.dm {

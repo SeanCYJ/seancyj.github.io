@@ -1,25 +1,34 @@
 .dm-btn-cont {
-    text-align: center;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
+    position: none;
+    display: grid;
+    align-items: center;
     z-index: 2;
     transition: 0.3s ease;
-    background: rgba(255, 255, 255, 0.5);
+    aspect-ratio: 1;
+    width: 1.7rem;
+    padding: 0rem;
+    align-content: center;
 }
 
 .dm-btn {
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 0.5rem;
-    background: rgba(0, 0, 0, 0);
-    display: grid;
+    border: 0.2rem solid rgba(218, 161, 39, 0.8);
+    border-radius: 50%;
+    background: rgba(218, 161, 39, 0);
+    /* box-shadow: 0px 0px 10px rgba(218, 161, 39, 0.5); */
+    /* display: grid;
     grid-template-rows: 1fr 1fr;
-    align-items: center;
-    aspect-ratio: 1;
+    align-items: center; */
     font-size: 0.75rem;
-    padding: 0rem 0.35rem;
-    width: 4rem;
+    /* padding: 0rem 0.35rem; */
+    aspect-ratio: 1;
+    width:1.7rem;
     transition: 0.2s ease;
+}
+
+.dm-btn.dm {
+    border: 0.2rem solid rgba(138, 55, 124, 0.8);
+    background: rgba(138, 55, 124, 0);
+    /* box-shadow: 0px 0px 10px rgba(138, 55, 124, 0.5); */
 }
 
 .dm-btn:focus {
@@ -79,85 +88,3 @@
     border: none;
 }
 
-@media screen and (min-width: 1200px) {
-    .dm-btn-cont {
-        text-align: center;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        z-index: 2;
-        transition: 0.3s ease;
-        background: none;
-    }
-    
-    .dm-btn {
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 0.5rem;
-        background: rgba(0, 0, 0, 0);
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
-        aspect-ratio: 1;
-        font-size: 0.75rem;
-        padding: 0rem 0.35rem;
-        width: 4rem;
-        transition: 0.2s ease;
-    }
-    
-    .dm-btn:focus {
-        outline: none;
-    }
-    
-    .dm-btn>.light {
-        font-weight: 600;
-        color: rgb(255, 136, 0);
-    }
-    
-    .dm-btn>.dark {
-        color: rgb(220, 220, 220);
-        border: 2px solid rgb(220, 220, 220);
-        border-radius: 0.2rem;
-        width: 3rem;
-    }
-    
-    
-    .dm-btn.dm>.light {
-        font-weight: 600;
-        color: rgb(255, 136, 0);
-        opacity: 20%;
-    }
-    
-    
-    .dm-btn.dm>.dark {
-        font-weight: 600;
-        color: rgb(55, 232, 255);
-        border: 2px solid rgb(55, 232, 255);
-    }
-    
-    /* .dm-btn:hover > .light {
-        font-weight: 400;
-        color: rgba(255, 255, 255, 0);
-    } */
-    
-    /* .dm-btn > img {
-        width: 3rem;
-        opacity: 50%;
-    } */
-    
-    .btn-descrip {
-        font-size: 1rem;
-        color: rgb(0, 0, 0);
-    }
-    
-    .btn-descrip.dm {
-        color: rgb(150, 150, 150);
-    }
-    
-    .inop-tag {
-        margin-top: 0.5rem;
-        font-size: 1rem;
-        font-weight: 500;
-        background: rgb(255, 255, 48);
-        border: none;
-    }
-}
