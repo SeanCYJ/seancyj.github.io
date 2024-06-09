@@ -340,7 +340,7 @@
 
     .short-cuts {
         padding: 1rem 1rem 1rem 1rem;
-        width: 90vw;
+        width: 80vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: none;

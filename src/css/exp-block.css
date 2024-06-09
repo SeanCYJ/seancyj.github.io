@@ -295,7 +295,7 @@
     .expBlock-cont {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
-        padding: 0rem 10vw 0rem 10vw !important;
+        padding: 1rem 10vw 0rem 10vw !important;
         height: fit-content;
         max-height: 70vh;
         overflow-y: auto;

@@ -3,7 +3,9 @@ import React, {createContext, useEffect, useState} from "react";
 export const DarkModeContext = createContext();
 
 export const DarkModeProvider = ({children}) => {
-    const [darkTheme, setTheme] = useState(true);
+    const now = new Date();
+    const hours = now.getHours();
+    const [darkTheme, setTheme] = useState(hours < 18 ? hours > 8 ? false : true : true);
 
     useEffect(() => {
         if (darkTheme) {
