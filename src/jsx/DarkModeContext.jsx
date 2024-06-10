@@ -16,7 +16,6 @@ export const DarkModeProvider = ({children}) => {
     }, [darkTheme]);
 
     const ToggleDM = () => {
-        console.log("toggled");
         setTheme(!darkTheme);
     }
 

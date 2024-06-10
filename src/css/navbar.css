@@ -36,6 +36,12 @@ nav>ul {
     z-index: 5 !important;
 }
 
+nav>ul>li.highlight {
+    background: rgba(223, 223, 177, 0.5);
+    height: 1.6rem;
+    border-radius: 1rem;
+}
+
 nav>ul>li {
     display: flex;
     justify-content: center;

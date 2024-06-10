@@ -39,7 +39,7 @@ const NavBar = () => {
     return (
         <>
         <nav className={darkTheme ? 'dm' : ''}>
-        <div className={darkTheme ? "pill dm" : "pill"} style={{ left: `${active/4 * 98}%`}} />
+        {/* <div className={darkTheme ? "pill dm" : "pill"} style={{ left: `${active/4 * 98}%`}} /> */}
         <ul>
             {navItems.map((item, index) => (
                 <li key = {index}
