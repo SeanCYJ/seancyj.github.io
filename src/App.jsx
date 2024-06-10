@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useContext} from 'react';
+import React, {useContext} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingSection from './jsx/LandingSection';
 import AboutSection from './jsx/AboutSection';
@@ -16,7 +16,6 @@ const App = () => {
             <Router>
             <div className={darkTheme ? 'container-fluid land-bg dm' : 'container-fluid land-bg'}>
                 <NavBar />
-                <Suspense fallback={<div>Loading...</div>}/>
                 <Routes>
                 <Route path="/" element={<LandingSection />} />
                 <Route path="/about" element={<AboutSection />} />
