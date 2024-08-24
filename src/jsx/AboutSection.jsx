@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const AboutSection = () => {    
 
     const contentEdu = ["<b>MEng Aeronautics and Astronautics</b> </br> <b>(Specialization in Computational Engineering)</b> </br> University of Southampton </br> Oct 2021 - Present", "<b>Cambridge A-Levels</b> <br/> Taylor's College <br/> Jan 2020 - Jun 2021"];
-    const contentSkills = ["SolidWorks, COMSOL, Ansys", "Python, Arduino, Flutter, JS", "HTML, CSS, JS", "Blender",  "Git", "Microsoft Productivity Suite"]
+    const contentSkills = ["SolidWorks, COMSOL, Ansys, MATLAB", "Python, Arduino, Flutter, JS", "HTML, CSS, JS", "Blender",  "Git", "Microsoft Productivity Suite"]
     const contentInterests = ["Flight Simulator, Blender, Programming, Video Games"];
     return (
         <>
