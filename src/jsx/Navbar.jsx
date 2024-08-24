@@ -9,8 +9,10 @@ import { DarkModeContext } from "./DarkModeContext";
 
 const NavBar = () => {
     const {darkTheme, ToggleDM} = useContext(DarkModeContext);
-    const navItems = ['', 'About', 'Work', 'Contact'];
-    const paths = ['/', '/about', '/experience', '/contact'];
+    // const navItems = ['', 'About', 'Work', 'Contact'];
+    // const paths = ['/', '/about', '/experience', '/contact'];
+    const navItems = [ 'About', 'Work', 'Contact'];
+    const paths = [ '/', '/experience', '/contact'];
     const [currentPage, setCurrentPage] = useState(navItems[0]);
     const [active, setActive] = useState(0);
 
@@ -39,7 +41,7 @@ const NavBar = () => {
     return (
         <>
         <nav className={darkTheme ? 'dm' : ''}>
-        {/* <div className={darkTheme ? "pill dm" : "pill"} style={{ left: `${active/4 * 98}%`}} /> */}
+        <div className={darkTheme ? "pill dm" : "pill"} style={{ left: `${active/3 * 100}%`}} />
         <ul>
             {navItems.map((item, index) => (
                 <li key = {index}
@@ -53,8 +55,8 @@ const NavBar = () => {
         </nav>
         <div className='nav-aid-cont'>
             <DarkModeToggle/>
-            <button className={darkTheme ? "abt-btn-work dm" : "abt-btn-work"} style={{display: currentPage === 'About' ? 'flex' : 'none'}} onClick={() => {handlePageChange('Work', 2)}}>Work ▶</button>
-            <button className={darkTheme ? "exp-btn-contact dm" : "exp-btn-contact"} style={{display: currentPage === 'Work' ? 'flex' : 'none'}} onClick={() => {handlePageChange('Contact', 3)}}>Contact ▶</button>
+            <button className={darkTheme ? "abt-btn-work dm" : "abt-btn-work"} style={{display: currentPage === 'About' ? 'flex' : 'none'}} onClick={() => {handlePageChange('Work', 1)}}>Work ▶</button>
+            <button className={darkTheme ? "exp-btn-contact dm" : "exp-btn-contact"} style={{display: currentPage === 'Work' ? 'flex' : 'none'}} onClick={() => {handlePageChange('Contact', 2)}}>Contact ▶</button>
         </div>
         </>
     );

@@ -36,17 +36,17 @@ nav>ul {
     z-index: 5 !important;
 }
 
-nav>ul>li.highlight {
+/* nav>ul>li.highlight {
     background: rgba(223, 223, 177, 0.5);
     height: 1.6rem;
     border-radius: 1rem;
-}
+} */
 
 nav>ul>li {
     display: flex;
     justify-content: center;
     padding: 0rem 1rem 0rem 1rem;
-    min-width: 25%;
+    min-width: 33%;
     text-decoration: none;
     z-index: 5 !important;
     cursor: pointer;
@@ -59,10 +59,12 @@ nav>ul>li>a:hover {
 
 .pill {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 27%;
-    height: 2rem;
+    bottom: 0.2rem;
+    left: 1rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    width: calc(33% - 0.4rem);
+    height: 1.6rem;
     background: rgba(223, 223, 177, 0.8);
     /* border: 2px solid rgb(0,0,0); */
     border-radius: 1rem 1rem 1rem 1rem;
@@ -71,7 +73,7 @@ nav>ul>li>a:hover {
 }
 
 .pill.dm {
-    background: rgba(63, 32, 58, 0.8);
+    background: rgba(32, 46, 63, 0.8);
 }
 
 .nav-aid-cont {

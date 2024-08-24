@@ -143,15 +143,15 @@ export function ExpBlock({data}) {
             >
               <div className={darkTheme ? 'expDescrip-cont dm' : 'expDescrip-cont'}
                  ref={popupRef}
-                 {...(isMobile ? bind() : {})}
+                //  {...(isMobile ? bind() : {})}
                  style={{
                    top: position.y,
                    left: position.x,
                    touchAction: 'none', // Prevent default touch actions
                    cursor: isMobile ? 'grab' : 'default',
-                  animation: visibleDiv === item.title && isMobile ? 'slide-in ease-out 0.3s' : 'none'
+                  animation: visibleDiv === item.title && isMobile ? 'slide-in ease 0.2s' : 'none'
                  }}
-                 onMouseUp={isMobile ? handleMouseUp() : null}
+                //  onMouseUp={isMobile ? handleMouseUp() : null}
               >
                 <div className='expD-img-cont'>
                   <img className='expD-img' src={visibleDiv === item.title ? '../' + item["picture-link"] + '.png' : ''}/>
@@ -164,7 +164,7 @@ export function ExpBlock({data}) {
                   <span className={darkTheme ? 'expD-b dm' : 'expD-b'}>{item.location} | {item.date}</span>
                 </div>
                 <button className='closeExpDescrip-btn' onTouchEnd={() => toggleDiv(item.title)} onClick={() => toggleDiv(item.title)}></button>
-                <div className='closeExpDescrip-mobile' style={{ display: isMobile ? 'block' : 'none'}}>Swipe up to close</div> 
+                {/* <div className='closeExpDescrip-mobile' style={{ display: isMobile ? 'block' : 'none'}}>Swipe up to close</div> */}
               </div>
             </div>
           ))}

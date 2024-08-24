@@ -15,8 +15,9 @@
     grid-template-columns: none;
     grid-template-rows: auto;
     gap: 2rem;
-    padding: 0rem 12vw 0rem 12vw;
+    padding: 3rem 12vw 0rem 12vw;
     align-items: top;
+    max-width: none;
 }
 
 .abt-img {
@@ -25,7 +26,7 @@
     border: solid;
     border-radius: 1rem;
     animation: slide-frl ease-in-out 1s;
-    display: none;
+    /* display: none; */
 }
 
 @keyframes slide-frl {
@@ -49,8 +50,14 @@
     height: 5rem;
 }
 
+.abt-name {
+    font-family: "DM Mono", monospace !important;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 .abt-text {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-family: "Urbanist", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -104,8 +111,9 @@
     .abt-cont {
         grid-template-rows: 1fr auto;
         gap: 2rem;
-        padding: 0rem 12vw 0rem 12vw;
+        padding: 10rem 12vw 0rem 12vw;
         align-items: top;
+        max-width: none;
     }
 
     .abt-img {
@@ -136,8 +144,9 @@
         grid-template-columns: 1fr;
         grid-template-rows: none;
         gap: 2rem;
-        padding: 0rem 20vw 10rem 20vw;
+        padding: 10rem 20vw 10rem 20vw;
         align-items: top;
+        max-width: none;
     }
 
     .abt-img {
@@ -145,7 +154,7 @@
         width: 100%;
         border: solid;
         border-radius: 1rem;
-        justify-self: center;
+        justify-self: left;
     }
 
     .abt-title {

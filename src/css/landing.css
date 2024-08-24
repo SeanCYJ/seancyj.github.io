@@ -3,6 +3,7 @@
     overflow: hidden;
     width: 100vw;
     color: rgb(0, 0, 0);
+    justify-content: center;
 }
 
 .section-1.dm {
@@ -10,19 +11,21 @@
 }
 
 .land-name {
-    padding: 0 0% 0 5% !important;
-    display: grid;
+    padding: 0 0% 0 0% !important;
+    display: flex;
     position: relative;
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
 }
 
 .landing-text {
+    display: flex;
     padding-top: 15vh;
     overflow: hidden;
-    grid-row: 1;
-    grid-column: 1 / span 8;
+    /* grid-row: 1;
+    grid-column: 1 / span 8; */
+    justify-content: center;
     z-index: 2;
-    animation: name-in 2s ease-out;
+    animation: name-in 1.2s ease-out;
     animation-delay: 0s;
     animation-fill-mode: both;
 }
@@ -48,7 +51,7 @@
 
 .short-cuts {
     padding: 5vh 15vw 1rem 15vw;
-    width: 90vw;
+    width: 100%;
     display: grid;
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr 1fr;
@@ -56,8 +59,13 @@
     opacity: 0%;
     overflow: visible;
     animation: slide-lr 0.5s ease-in;
-    animation-delay: 1.8s;
+    animation-delay: 1.2s;
     animation-fill-mode: forwards;
+}
+
+.short-cuts-cont {
+    display: flex;
+    justify-content: center;
 }
 
 .short-cuts.dm {
@@ -101,7 +109,7 @@
 }
 
 .gh-btn:hover {
-    box-shadow: 0px 0px 20px #6e5494;
+    box-shadow: 0px 0px 20px rgb(110, 84, 148, 0.6);
 }
 
 .gh-logo {
@@ -115,7 +123,7 @@
 }
 
 .abt-btn:hover {
-    box-shadow: 0px 0px 20px rgb(70, 141, 136);
+    box-shadow: 0px 0px 20px rgb(70, 141, 136, 0.6);
 }
 
 .contact-btn {
@@ -125,7 +133,7 @@
 }
 
 .contact-btn:hover {
-    box-shadow: 0px 0px 20px rgb(78, 172, 196);
+    box-shadow: 0px 0px 20px rgb(78, 172, 196, 0.6);
 }
 
 
@@ -144,7 +152,8 @@
     border: 2px solid rgb(0, 0, 0);
     border-radius: 1rem;
     padding: 0rem 1rem 0rem 1rem;
-    margin-left: calc(15vw - 2rem);
+    margin: 0rem 1rem 0rem 1rem;
+    /* margin-left: calc(15vw - 2rem); */
     box-shadow: none;
 }
 
@@ -321,18 +330,19 @@
 
 @media screen and (min-width: 700px) {
     .land-name {
-        padding: 0 0% 0 5% !important;
+        padding: 0 0% 0 0% !important;
         position: relative;
-        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 1fr); */
     }
 
     .landing-text {
         padding-top: 20vh;
         overflow: hidden;
-        grid-row: 1;
-        grid-column: 1 / span 8;
+        /* grid-row: 1;
+        grid-column: 1 / span 8; */
+        justify-content: center;
         z-index: 2;
-        animation: name-in 2s ease-out;
+        animation: name-in 1.2s ease-out;
         animation-delay: 0s;
         animation-fill-mode: both;
     }
@@ -340,7 +350,7 @@
 
     .short-cuts {
         padding: 1rem 1rem 1rem 1rem;
-        width: 80vw;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: none;
@@ -348,14 +358,14 @@
         opacity: 0%;
         overflow: visible;
         animation: slide-lr 0.5s ease-in;
-        animation-delay: 1.8s;
-        animation-fill-mode: forxwards;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards;
     }
 
 
     .shortcut-btn {
         font-size: 1.7vw;
-        border-radius: 1rem;
+        border-radius: 0.6rem;
         padding: 0.5rem;
         display: flex;
         justify-content: center;
@@ -395,7 +405,7 @@
         font-size: 8rem;
         border-radius: 1rem;
         padding: 0rem 1rem 0rem 1rem;
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
     }
 
     .landing-cont {
@@ -467,26 +477,27 @@
 
 @media screen and (min-width: 1200px) {
     .land-name {
-        padding: 0 0% 0 10% !important;
+        padding: 0 0% 0 0% !important;
         display: grid;
         position: relative;
-        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 1fr); */
     }
 
     .landing-text {
-        padding-top: 35vh;
+        padding-top: 20vh;
         overflow: hidden;
-        grid-row: 1;
-        grid-column: 1 / span 8;
+        /* grid-row: 1;
+        grid-column: 1 / span 8; */
+        justify-content: center;
         z-index: 2;
-        animation: name-in 2s ease-out;
-        animation-delay: 3.2s;
+        animation: name-in 1.2s ease-out;
+        animation-delay: 0s;
         animation-fill-mode: both;
     }
 
     .short-cuts {
         padding: 1rem 1rem 1rem 1rem;
-        width: fit-content;
+        width: 80%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: none;
@@ -494,13 +505,13 @@
         opacity: 0%;
         overflow: visible;
         animation: slide-lr 0.5s ease-in;
-        animation-delay: 5s;
+        animation-delay: 1.2s;
         animation-fill-mode: forwards;
     }
 
     .shortcut-btn {
         font-size: 1rem;
-        border-radius: 1rem;
+        border-radius: 0.6rem;
         padding: 0.5rem;
         min-width: 10rem;
     }
@@ -531,11 +542,10 @@
     }
 
     .Name {
-        font-weight: 400;
-        font-size: 9rem;
+        font-weight: 500;
+        font-size: 15rem;
         border-radius: 2rem;
-        padding: 0rem 1rem 0rem 1rem;
-        margin-left: 1rem;
+        padding: 0rem 1.5rem 0rem 1.5rem;
     }
 
     .landing-cont {

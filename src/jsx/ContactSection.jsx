@@ -39,7 +39,7 @@ const ContactSection = () => {
         <>
             <div className="row section-4">
                 <div className="col-lg-12 g-0 my-auto">
-                    <h2>Contact Me</h2>
+                    {/* <h2>Contact Me</h2> */}
                     <div className="contact-cont">
                         <div>
                             <div className="contact-txt">Thank you for your time. Feel free to reach out if you have any questions or collaboration ideas. I am always looking for a new challenge.</div>

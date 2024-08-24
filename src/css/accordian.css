@@ -14,8 +14,9 @@
     border: none;
     background: rgba(0,0,0,0);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: flex;
+    /* align-items: center; */
     justify-content: space-between;
     width: 100%;
     color: inherit;
@@ -25,7 +26,7 @@
 .accordian-content {
     height: 0px;
     opacity: 0%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     transform: translate(10%,0%);
     overflow: hidden;
 }

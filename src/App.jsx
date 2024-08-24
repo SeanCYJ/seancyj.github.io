@@ -17,7 +17,7 @@ const App = () => {
             <div className={darkTheme ? 'container-fluid land-bg dm' : 'container-fluid land-bg'}>
                 <NavBar />
                 <Routes>
-                <Route path="/" element={<LandingSection />} />
+                <Route path="/" element={<AboutSection />} />
                 <Route path="/about" element={<AboutSection />} />
                 <Route path="/experience" element={<ExpSection />} />
                 <Route path="/contact" element={<ContactSection />} />
