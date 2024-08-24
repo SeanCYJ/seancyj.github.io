@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found</title>
   <script>
-    // Redirect to the correct URL using the client-side router
     (function() {
       var currentLocation = window.location.pathname;
       var origin = window.location.origin;
-      var basePath = '/'; // Since you're using username.github.io
-      window.location.href = origin + basePath + '#' + currentLocation.replace(basePath, '');
+      var basePath = '/';  // No subpath since it's username.github.io
+      window.location.href = origin + basePath + '#' + currentLocation;
     })();
   </script>
 </head>
