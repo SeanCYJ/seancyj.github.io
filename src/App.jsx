@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingSection from './jsx/LandingSection';
 import AboutSection from './jsx/AboutSection';
 import ExpSection from './jsx/ExperienceSection';
@@ -18,7 +18,6 @@ const App = () => {
                 <NavBar />
                 <Routes>
                 <Route path="/" element={<AboutSection />} />
-                <Route path="/about" element={<AboutSection />} />
                 <Route path="/experience" element={<ExpSection />} />
                 <Route path="/contact" element={<ContactSection />} />
                 </Routes>
