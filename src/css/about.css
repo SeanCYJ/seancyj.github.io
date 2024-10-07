@@ -14,19 +14,23 @@
     display: grid;
     grid-template-columns: none;
     grid-template-rows: auto;
-    gap: 2rem;
     padding: 3rem 12vw 0rem 12vw;
     align-items: top;
     max-width: none;
 }
 
 .abt-img {
-    width: 50%;
+    filter: invert(0%);
+    width: 70%;
     max-width: none;
-    border: solid;
-    border-radius: 1rem;
+    /* border: solid; */
+    /* border-radius: 1rem; */
     animation: slide-frl ease-in-out 1s;
     /* display: none; */
+}
+
+.abt-img.dm {
+    filter: invert(80%);
 }
 
 @keyframes slide-frl {
@@ -110,7 +114,6 @@
 
     .abt-cont {
         grid-template-rows: 1fr auto;
-        gap: 2rem;
         padding: 10rem 12vw 0rem 12vw;
         align-items: top;
         max-width: none;
@@ -143,18 +146,18 @@
     .abt-cont {
         grid-template-columns: 1fr;
         grid-template-rows: none;
-        gap: 2rem;
-        padding: 10rem 20vw 10rem 20vw;
+        padding: 5rem 20vw 10rem 20vw;
         align-items: top;
         max-width: none;
     }
 
     .abt-img {
-        max-width: 300px;
-        width: 100%;
-        border: solid;
-        border-radius: 1rem;
-        justify-self: left;
+        max-width: 500px;
+        /* width: 100%; */
+        width: 1000px;
+        /* border: solid; */
+        /* border-radius: 1rem; */
+        justify-self: center;
     }
 
     .abt-title {

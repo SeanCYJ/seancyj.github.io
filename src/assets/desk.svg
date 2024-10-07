@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="126.99984mm"
+   height="21.166588mm"
+   viewBox="0 0 126.99984 21.166588"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="desk.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-41.500081,-118.19275)">
+    <g
+       transform="matrix(0.26458333,0,0,0.26458333,-64.333331,40.405252)"
+       id="g7">
+      <path
+         d="m 401,366.5 c 0,-3.59 2.91,-6.5 6.5,-6.5 h 465 c 3.59,0 6.5,2.91 6.5,6.5 v 0 c 0,3.59 -2.91,6.5 -6.5,6.5 h -465 c -3.59,0 -6.5,-2.91 -6.5,-6.5 z"
+         stroke="#262626"
+         stroke-width="2"
+         stroke-miterlimit="8"
+         fill="#fcf4e4"
+         fill-rule="evenodd"
+         id="path3"
+         style="fill:none;fill-opacity:1;stroke:#262626;stroke-width:1.99937;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="M 0,62 5.28052,0 H 98.7195 L 104,62 Z"
+         stroke="#262626"
+         stroke-width="2"
+         stroke-miterlimit="8"
+         fill="#262626"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,586,357)"
+         id="path4"
+         style="fill:none;stroke-width:2;stroke-dasharray:none" />
+      <path
+         d="m 552,357 v -5 c 0,-2.761 3.582,-5 8,-5 4.418,0 8,2.239 8,5 v 5 z"
+         fill="#0d0d0d"
+         fill-rule="evenodd"
+         id="path5"
+         style="fill:none;stroke:#262626;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="m 749,321 -3.466,37 H 729.466 L 726,321 Z"
+         fill="#262626"
+         fill-rule="evenodd"
+         id="path6"
+         style="fill:#262626;fill-opacity:1;stroke:none;stroke-opacity:1" />
+      <path
+         d="M 0,0 H 10 L 9.09912,3.33332 H 3.33332 V 24.6668 L 0,37 Z"
+         fill="#262626"
+         fill-rule="evenodd"
+         transform="matrix(-1,0,0,1,740,311)"
+         id="path7"
+         style="fill:none;stroke:#262626;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
