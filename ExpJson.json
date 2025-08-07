@@ -1,26 +1,36 @@
 [
     {
         "id": "1",
-        "date": "Oct 2022 - Sep 2024",
+        "date": "Oct 2024 - Jun 2025",
+        "title": "Modular Unmanned Aerial Vehicle (UAV)",
+        "location": "Uni. of Southampton",
+        "role": "Structural & Data Visualization Lead",
+        "description": "Performed structural analysis to ensure compliance with current regulations under different aircraft configurations. Additionally, co-led in producing the report and showcase video. (<a href='https://youtu.be/p_pD2bPCRRI' target='_blank'>https://youtu.be/p_pD2bPCRRI</a>)",
+        "picture-link": "expPic-11",
+        "category": "Featured, Engineering"
+    },
+    {
+        "id": "2",
+        "date": "Oct 2022 - Present",
         "title": "Ambrrr: Clean Energy Alert",
         "location": "Ambrrr",
         "role": "UI/UX Dev | Lead Web Dev",
-        "description": "Worked in a startup environment, assisting in the development of a responsive website utilizing different web frameworks and Flutter framework.",
+        "description": "Worked in a startup environment, assisting in the development of a responsive website utilizing different web frameworks and Flutter framework. (<a href='https://www.ambrrr.com' target='_blank'>www.ambrrr.com</a>)",
         "picture-link": "expPic-1",
         "category": "Featured, Web Dev, Design, Programming, Others"
     },
     {
-        "id": "2",
+        "id": "3",
         "date": "Jun 2022 - Sep 2022",
         "title": "University Research Internship",
         "location": "UoS Malaysia",
         "role": "University Research Intern",
         "description": "Successfully investigated each countries' ability to produce biodiesel from the availability of raw materials, with over 10 million cells.",
         "picture-link": "expPic-2",
-        "category": "Featured, Data Analytics, MS Office, Engineering"
+        "category": "Data Analytics, MS Office, Engineering"
     },
     {
-        "id": "3",
+        "id": "4",
         "date": "Jan 2022 - Jan 2022",
         "title": "Quizona Chemistry V2.0",
         "location": "UoS Malaysia",
@@ -30,17 +40,17 @@
         "category": "Featured, Programming"
     },
     {
-        "id": "4",
+        "id": "5",
         "date": "Oct 2023 - Jun 2024",
         "title": "Vibroacoustic Analysis of Thermal Fatigued CFRP",
-        "location": "UoS",
+        "location": "Uni. of Southampton",
         "role": "Individual Project",
         "description": "Investigated the use of vibroacoustic methods and FE simulations, when analysing the health of CFRP used in hydrogen fuel tanks for a hydrogen fuelled future.",
         "picture-link": "expPic-4",
         "category": "Featured, Engineering, FEA"
     },
     {
-        "id": "5",
+        "id": "6",
         "date": "Feb 2023 - Jun 2023",
         "title": "Unmanned Aerial Vehicle (UAV) Design Project",
         "location": "UoS Malaysia",
@@ -50,7 +60,7 @@
         "category": "Featured, Engineering, Arduino, Programming"
     },
     {
-        "id": "6",
+        "id": "7",
         "date": "Apr 2022 - Jul 2022",
         "title": "James Dyson Award 2022 Submission - Tekkai",
         "location": "James Dyson Award 2022",
@@ -60,16 +70,6 @@
         "category": "Featured, Engineering, CAD, Blender, Design, Others"
     },
     {
-        "id": "7",
-        "date": "Sep 2022 - May 2023",
-        "title": "Southampton Malaysia Aviator's Society (SMAS)",
-        "location": "UoS Malaysia",
-        "role": "Secretary",
-        "description": "Coordinated meetings and worked with 5 other committee members to curate marketing materials for club events and aviation industry related outings.",
-        "picture-link": "expPic-7",
-        "category": "Featured, Others"
-    },
-    {
         "id": "8",
         "date": "Oct 2022 - Dec 2022",
         "title": "Mission Case Study, Jupiter Orbit Explorer",
@@ -77,7 +77,7 @@
         "role": "Team Member",
         "description": "Analysed the communication window based on orbital behaviours of the planets and spacecraft using Python, to determine the power requirements for the s/c.",
         "picture-link": "expPic-8",
-        "category": "Featured, Engineering, Programming"
+        "category": "Engineering, Programming"
     },
     {
         "id": "9",
