@@ -14,7 +14,7 @@
         "date": "Oct 2022 - Present",
         "title": "Ambrrr: Clean Energy Alert",
         "location": "Ambrrr",
-        "role": "UI/UX Dev | Lead Web Dev",
+        "role": "UI/UX Dev | Web Dev",
         "description": "Worked in a startup environment, assisting in the development of a responsive website utilizing different web frameworks and Flutter framework. (<a href='https://www.ambrrr.com' target='_blank'>www.ambrrr.com</a>)",
         "picture-link": "expPic-1",
         "category": "Featured, Web Dev, Design, Programming, Others"
@@ -22,10 +22,10 @@
     {
         "id": "3",
         "date": "Jun 2022 - Sep 2022",
-        "title": "University Research Internship",
+        "title": "Biofuel Research Internship",
         "location": "UoS Malaysia",
         "role": "University Research Intern",
-        "description": "Successfully investigated each countries' ability to produce biodiesel from the availability of raw materials, with over 10 million cells.",
+        "description": "Successfully investigated each countries' ability to produce biodiesel from the availability of raw materials, using Excel consisting of over 10 million cells.",
         "picture-link": "expPic-2",
         "category": "Data Analytics, MS Office, Engineering"
     },
